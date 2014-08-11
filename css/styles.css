@@ -1,0 +1,20 @@
+body, html {
+	height: 100%;
+	width: 100%;
+}
+
+.navbar-toggle {
+	border-width: 0;
+}
+
+.navbar .nav > li > a {
+	color: #FFFFFF;
+}
+
+.navbar {
+	background-color: #6200ff;
+}
+
+.lb {
+	color: #FFFFFF;
+}
