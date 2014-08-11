@@ -12,12 +12,18 @@ body, h1, h2, h3, h4, h5, h6 {
 	border-width: 0;
 }
 
+.intro-header-top {
+	padding-top: 100px;
+	background-color: #BDBDBD;
+	padding-bottom: 50px;
+}
+
 .navbar .nav > li > a {
 	color: #FFFFFF;
 }
 
 .navbar {
-	background-color: #6200ff;
+	background-color: #7401DF;
 }
 
 .lb {
