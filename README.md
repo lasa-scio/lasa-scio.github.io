@@ -1,24 +1,23 @@
 # LASA Science Olympiad
-This is the website for LASA SciO.
+This is the website for LASA SciO, containing blog posts, contact info, an about page, etc. It can be found (here.)[http://lasa-scio.github.io]
 
 ## Project structure
-The root directory contains the main html files, or what you see in the navbar (Useful links, Contact, Blog, etc)
+The root directory contains the main html files, or what you see in the navbar (links, contact, blog, etc)
 
-The img directory should contain images. If you need to add images, add it here and then reference it.
+The posts directory has HTML files for individual posts. These are referenced from blog.html, which contains post header info (the title and an excerp) and a link to the full post, so the user can read the full blog post details here.
 
-The posts directory has html files for individual posts.
+The img directory should contain images. If you need to add images, add them here.
 
-The css, fonts, and js directory contain css, fonts, and javascript. You shouldn't need to change these.
+The css, fonts, and js directory contain CSS, fonts, and Javascript. You shouldn't need to change these.
 
-You may be asking "why is this so inelegant? Why didn't you use jekyll?". It's because it's too much work, man. 
 
 ## Adding a post
 
-Jekyll is honestly more trouble than it's worth. Instead:
+Hopefully, you know some basic HTML.
 
-1. Open blog.html in a text editor (not the browser)
-2. Scroll down to blog posts
-3. Copy the ```<div class="blogpost-header"```
+1. Open blog.html in a text editor.
+2. Scroll down to the blog posts markup.
+3. Copy and paste the contents of ```<div class="blogpost-header"```
 and create a new blogpost header. This looks like:
 ```
 <div class="blogpost-header">
@@ -42,14 +41,15 @@ and create a new blogpost header. This looks like:
         </div>
 ```
 
-4. Update ```class="post-meta"``` to the correct author and datetime.
-5. Change the post title header.
+4. Update the contents of ```<span class="post-meta"``` to the correct author and datetime.
+5. Change the title of the post.
 6. Change the post excerpt.
-7. Make the link reference the html file in the posts folder. This means changing the ```<a href="posts/new-website.html">```
-to a new .html file.
-8. Create the .html file in the posts directory.
-9. Copy-paste one of the other posts into this file.
+7. Make the link reference the html file in the posts folder. This means changing the ```<a href="posts/new-website.html">``` to something like ```<a href="posts/new-post.html">```
+8. Create the newly referenced .html file in the posts directory.
+9. Copy-paste the contents of another post in the posts directory into this file.
 10. Update the post content.
 
+
+You may be asking "Why is this so inelegant? Why didn't you use jekyll?". It's because it's too much work, man. We'll only need to add a handful of posts throughout the year and I have limited time.
 
 If you need help, email (neilpatil215@gmail.com)[neilpatil215@gmail.com]
