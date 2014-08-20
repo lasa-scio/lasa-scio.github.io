@@ -1,5 +1,5 @@
 # LASA Science Olympiad
-This is the website for LASA SciO, containing blog posts, contact info, an about page, etc. It can be found (here.)[http://lasa-scio.github.io]
+This is the website for LASA SciO, containing blog posts, contact info, an about page, etc. It can be found at http://lasa-scio.github.io
 
 ## Project structure
 The root directory contains the main html files, or what you see in the navbar (links, contact, blog, etc)
@@ -52,4 +52,4 @@ and create a new blogpost header. This looks like:
 
 You may be asking "Why is this so inelegant? Why didn't you use jekyll?". It's because it's too much work, man. We'll only need to add a handful of posts throughout the year and I have limited time.
 
-If you need help, email (neilpatil215@gmail.com)[neilpatil215@gmail.com]
+If you need help, email neilpatil215@gmail.com
