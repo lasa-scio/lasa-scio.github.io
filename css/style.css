@@ -14,19 +14,11 @@ h1, h2 {
 
 
 .title {
-    font-weight:bold; 
-    letter-spacing:4px; 
-    font-family: symbol;
-}
-
-h1.title {
-    font-size: 44px;
-    margin-bottom: 0px;
+    font-weight:bold;
 }
 
 h2.title {
     font-size: 34px;
-    margin-top: 0px;
 }
 
 .navbar-fixed-top .nav {
@@ -41,8 +33,18 @@ p.center {
     text-align: center;
 }
 
+.info > h2 {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
 .navbar-fixed-top .navbar-brand {
     padding: 0 15px;
+}
+
+.row {
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 footer {
@@ -50,11 +52,10 @@ footer {
     background-color: #46288c;
     color:white;
     font-size:14px;
-
 }
 
 footer > div {
-    padding: 30px 0;
+    padding: 30px 30px;
 }
 
 @media(min-width:768px) {
