@@ -22,7 +22,7 @@ h2.title {
 }
 
 .navbar-fixed-top .nav {
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 img.center {
@@ -39,7 +39,7 @@ p.center {
 }
 
 .navbar-fixed-top .navbar-brand {
-    padding: 10px 15px;
+    padding: 10px;
 }
 
 .row {
@@ -64,7 +64,7 @@ footer > div {
     }
 
     .navbar-fixed-top .navbar-brand {
-        padding: 15px 0;
+        padding: 10px 0;
     }
 }
 
