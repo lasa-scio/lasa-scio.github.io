@@ -5,7 +5,7 @@
  */
 
 body {
-    padding-top: 95px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+    padding-top: 75px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
 }
 
 h1, h2 {
@@ -22,7 +22,7 @@ h2.title {
 }
 
 .navbar-fixed-top .nav {
-    padding: 25px 0;
+    padding: 15px 0;
 }
 
 img.center {
@@ -39,7 +39,7 @@ p.center {
 }
 
 .navbar-fixed-top .navbar-brand {
-    padding: 0 15px;
+    padding: 10px 15px;
 }
 
 .row {
@@ -60,10 +60,30 @@ footer > div {
 
 @media(min-width:768px) {
     body {
-        padding-top: 125px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+        padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
     }
 
     .navbar-fixed-top .navbar-brand {
         padding: 15px 0;
     }
+}
+
+.post{
+    padding-top:36px;
+}
+.post-meta {
+    font-weight: 300;
+    font-size: 16px;
+    margin-left: 6px;
+    color: #BEBEBE;
+}
+.post-title {
+font-size: 36px;
+margin-top: 12px;
+margin-bottom: 12px;
+}
+.section-heading-spacer {
+border-top: 3px solid #e7e7e7;
+width: 400px;
+float: left;
 }
