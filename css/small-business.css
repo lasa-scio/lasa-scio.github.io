@@ -8,8 +8,37 @@ body {
     padding-top: 95px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
 }
 
+h1, h2 {
+    color:#46288c;
+}
+
+
+.title {
+    font-weight:bold; 
+    letter-spacing:4px; 
+    font-family: symbol;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h1.title {
+    font-size: 44px;
+}
+
+h2.title {
+    font-size: 34px;
+}
+
 .navbar-fixed-top .nav {
     padding: 25px 0;
+}
+
+img.center {
+    margin:auto;
+}
+
+p.center {
+    text-align: center;
 }
 
 .navbar-fixed-top .navbar-brand {
