@@ -5,7 +5,7 @@
  */
 
 body {
-    padding-top: 95px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+    padding-top: 75px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
 }
 
 h1, h2 {
@@ -22,7 +22,7 @@ h2.title {
 }
 
 .navbar-fixed-top .nav {
-    padding: 25px 0;
+    padding: 5px 0;
 }
 
 img.center {
@@ -39,7 +39,7 @@ p.center {
 }
 
 .navbar-fixed-top .navbar-brand {
-    padding: 0 15px;
+    padding: 10px 15px;
 }
 
 .row {
@@ -60,7 +60,7 @@ footer > div {
 
 @media(min-width:768px) {
     body {
-        padding-top: 125px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+        padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
     }
 
     .navbar-fixed-top .navbar-brand {
