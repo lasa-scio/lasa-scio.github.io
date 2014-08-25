@@ -17,16 +17,16 @@ h1, h2 {
     font-weight:bold; 
     letter-spacing:4px; 
     font-family: symbol;
-    margin-top: 0px;
-    margin-bottom: 0px;
 }
 
 h1.title {
     font-size: 44px;
+    margin-bottom: 0px;
 }
 
 h2.title {
     font-size: 34px;
+    margin-top: 0px;
 }
 
 .navbar-fixed-top .nav {
