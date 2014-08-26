@@ -8,6 +8,10 @@ body {
     padding-top: 75px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
 }
 
+html, body {
+    font-family: 'Lato', sans-serif;
+}
+
 h1, h2 {
     color:#46288c;
 }
