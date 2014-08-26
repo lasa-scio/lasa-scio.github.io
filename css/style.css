@@ -6,6 +6,7 @@
 
 body {
     padding-top: 75px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+    font-size:16px;
 }
 
 h1, h2 {
@@ -91,4 +92,24 @@ margin-bottom: 12px;
 border-top: 3px solid #e7e7e7;
 width: 400px;
 float: left;
+}
+
+
+.navbar-inverse{
+    background-color:#46288c;
+    border-color:#46288c;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff; 
+  font-size:16px;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #777;
+}
+.navbar-brand{
+    min-height:70px;
+}
+.container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse{
+    margin-right:25px
 }
