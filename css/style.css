@@ -85,7 +85,7 @@ footer > div {
     font-weight: 300;
     font-size: 16px;
     margin-left: 6px;
-    color: #BEBEBE;
+    color: #777777;
 }
 .post-title {
 font-size: 36px;
@@ -116,8 +116,4 @@ float: left;
 }
 .container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse{
     margin-right:25px
-}
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus{
-    background-color:#46288c;
-    color: #777;
 }
