@@ -97,6 +97,11 @@ border-top: 3px solid #e7e7e7;
 width: 400px;
 float: left;
 }
+.largelist > li {
+    font-size: 18px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
 
 
 .navbar-inverse{
