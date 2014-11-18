@@ -17,6 +17,22 @@ h1, h2 {
     color:#46288c;
 }
 
+/* Declare heights because of positioning of img element */
+.carousel .item {
+    height: 400px;
+    background-color: #FFF;
+}
+.carousel {
+  margin-bottom: 60px;
+}
+.carousel-inner > .item > img {
+  zoom: 2;
+  margin: auto;
+  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+    align: middle;
+}
 
 .title {
     font-weight:bold;
