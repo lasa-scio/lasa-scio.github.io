@@ -166,7 +166,7 @@ iframe {
 }
 @media(max-width:560px) {
     .img-history {
-        height: 300px;
+        height: 250px;
     }
 }
 .competitor {
