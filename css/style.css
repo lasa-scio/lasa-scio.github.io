@@ -13,6 +13,16 @@ html, body {
     font-family: 'Lato', sans-serif;
 }
 
+.center {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.state-countdown {
+    display: inline-block;
+    width: auto;
+}
+
 h1, h2 {
     color:#46288c;
 }
@@ -167,6 +177,9 @@ iframe {
 @media(max-width:560px) {
     .img-history {
         height: 250px;
+    }
+    .state-countdown {
+        visibility: hidden;
     }
 }
 .competitor {

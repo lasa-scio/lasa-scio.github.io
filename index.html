@@ -14,10 +14,9 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/style.css" rel="stylesheet">
 
     <link rel="author" href="humans.txt" />
+
 
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 
@@ -31,6 +30,12 @@
 
 
     <!-- STYLESHEET [main - #46288c] [background purple - #e9e3f7] [subtext purple - #714bcb] -->
+
+    
+    <!-- Flipclock -->
+    <link rel="stylesheet" href="flipclock/flipclock.css"/>
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
 
         <script type="text/javascript">
     var _gaq = _gaq || [];
@@ -91,8 +96,20 @@
         <!-- /.container -->
     </nav>
 
-    <!-- Page Content -->
-    <div class="container">
+
+
+<div class="row">
+    <div class="center">
+
+            <div class="state-countdown"></div>
+            <h4>until the State competition</h4>
+    </div>
+    </div>
+
+
+        <!-- Page Content -->
+        <div class="container">
+
 
         <!-- Heading Row -->
         <div class="row">
@@ -253,6 +270,8 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
 
+    <script src="flipclock/flipclock.min.js"</script>
+
     <script>
     (function(i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
@@ -276,6 +295,17 @@
         var index = Math.floor((Math.random() * $('.selectitem').length));
         $('.selectitem').eq(index).addClass("active");
         $('.item').eq(index).addClass("active");
+    </script>
+
+    <script type="text/javascript">
+    var state = new Date(Date.UTC(2015, 3, 24, 6, 0));
+    var now = new Date();
+    var diff = state.getTime() / 1000 - now.getTime() / 1000;
+    var clock = $('.state-countdown').FlipClock(diff, {
+        clockFace: 'DailyCounter',
+        countdown: true
+    });
+    clock.start();
     </script>
 </body>
 
