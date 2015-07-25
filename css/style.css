@@ -18,6 +18,10 @@ html, body {
     margin-bottom: 48px;
 }
 
+.history-center {
+    text-align: center;
+}
+
 .state-countdown {
     display: inline-block;
     width: auto;
@@ -168,6 +172,8 @@ iframe {
     padding-top: 12px;
     padding-bottom: 12px;
     height: 400px;
+    margin-left: auto;
+    margin-right: auto;
     object-fit: cover;
 }
 
@@ -190,4 +196,9 @@ iframe {
 }
 .place {
     text-align: center;
+    font-size: 18px;
+}
+.teamlist > li {
+    margin-left: 2px;
+    margin-right: 2px;
 }
