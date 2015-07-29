@@ -177,8 +177,31 @@ iframe {
     object-fit: cover;
 }
 
+.img-circle {
+	margin-bottom:1.5em;
+	margin-top:1.5em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+	height: 200px;
+	background-size:cover;
+	display: flex;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+}
+
+#dusty-img {
+	<!-- Find picture of Dusty-->
+	background-image: url("../img/loading.gif");
+}
+
+#greg-img {
+	background-image:url("../img/greg_palmer.jpg");
+}
+
 .row{
-    overflow: hidden; 
+    overflow: hidden;
 }
 @media(max-width:560px) {
     .img-history {
