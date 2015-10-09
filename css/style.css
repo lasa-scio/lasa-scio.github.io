@@ -192,8 +192,7 @@ iframe {
 }
 
 #dusty-img {
-	<!-- Find picture of Dusty-->
-	background-image: url("../img/loading.gif");
+	background-image: url("../img/dusty.jpg");
 }
 
 #greg-img {
