@@ -200,7 +200,7 @@ iframe {
 }
 
 .row{
-    overflow: hidden;
+    margin:auto;
 }
 @media(max-width:560px) {
     .img-history {
