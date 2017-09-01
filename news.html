@@ -1,927 +1,876 @@
 <DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>LASA SciO - Blog</title>
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="author" href="humans.txt" />
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-            <![endif]-->
-    <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-53722522-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-        var ga = document.createElement('script');
-        ga.type = 'text/javascript';
-        ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(ga, s);
-    })();
-    </script>
-</head>
-
-<body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>LASA SciO - Blog</title>
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="author" href="humans.txt" />
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-53722522-1']);
+            _gaq.push(['_trackPageview']);
+            
+            (function() {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">
+                    </button>
+                    <a class="navbar-brand" href="index.html">
                     <img src="img/logo.jpg" height="50" alt="">
-                </a>
+                    </a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="news.html">News</a>
+                        </li>
+                        <li>
+                            <a href="history.html">History</a>
+                        </li>
+                        <li>
+                            <a href="calendar.html">Calendar</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact Form</a>
+                        </li>
+                        <li>
+                            <a href="links.html">Links and Handouts</a>
+                        </li>
+                        <!--<li>
+                            <a target="_blank" href="https://austinisd.schoolcashonline.com/Fee/Details/670/63/False/True">Donate</a>
+                            </li>-->
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="active">
-                        <a href="news.html">News</a>
-                    </li>
-                    <li>
-                        <a href="history.html">History</a>
-                    </li>
-                    <li>
-                        <a href="calendar.html">Calendar</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact Form</a>
-                    </li>
-                    <li>
-                        <a href="links.html">Links and Handouts</a>
-                    </li>
-                    <!--<li>
-                        <a target="_blank" href="https://austinisd.schoolcashonline.com/Fee/Details/670/63/False/True">Donate</a>
-                    </li>-->
-                </ul>
+            <!-- /.container -->
+        </nav>
+        <!-- Blog posts -->
+        <div class="container">
+            <!-- NATIONALS -->
+            <div class="row">
+                <div class="blogpost-header">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <article class="post">
+                            <header class="post-header">
+                                <span class="post-meta">
+                                Posted by Ben Zern and Varun Sudunagunta 
+                                <time datetime="2016-4-01"></time>
+                                </span>
+                                <h2 class="post-title">LASA FINISHES NINTH AT NATIONALS</h2>
+                            </header>
+                            <section class="post-excerpt">
+                                <img class="img-history" src="img/team_2016.jpg" />
+                                <p>The Science Olympiad team finished 9th at the National Tournament in Menomonie, Wisconsin. This is an amazing finish and was well deserved -  Congratulations everyone!</p>
+                                <p>LASA finished with 3 event medals! Below are the team’s Top 15 finishes.</p>
+                                <ul>
+                                    <li>2nd - Bridge Building - Carly Smith and Michael Yi</li>
+                                    <li>3rd - Fossils - Varun Sudunagunta and Carly Smith</li>
+                                    <li>5th - Invasive Species - Prerna Kundalgurki and Varun Sudunagunta</li>
+                                    <li>8th - Green Generation - Varun Sudunagunta and Edward Lee</li>
+                                    <li>9th - Dynamic Planet - Rebekah Albach and Shubhanga Ballal</li>
+                                    <li>9th - GeoLogic Mapping - Rebekah Albach and Shubhanga Ballal</li>
+                                    <li>9th - Hydrogeology - Rebekah Albach and Michael Taleff</li>
+                                    <li>11th - Forensics - Zennie Wey and Akshara Anand</li>
+                                    <li>11th - Protein Modeling - Michael Taleff, Edward Lee, and Niels Kornerup</li>
+                                    <li>11th - Air Trajectory - Ben Zern and Alec Schultz</li>
+                                    <li>11th - Electric Vehicle - Ben Zern and Kevin Black</li>
+                                    <li>12th - Anatomy and Physiology - Edward Lee and Niels Kornerup</li>
+                                    <li>12th - Wright Stuff - Alec Schultz and Michael Yi</li>
+                                    <li>14th - Astronomy - Shubhanga Ballal and Prerna Kundalgurki</li>
+                                    <li>14th - Game On - Neil Patil and Kevin Black</li>
+                                    <li>15th - Cell Biology - Edward Lee and Niels Kornerup</li>
+                                </ul>
+                            </section>
+                        </article>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
             </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-    
-    <!-- Blog posts -->
-   <div class="container">
- 
-       
-       
-        <!-- NATIONALS -->
-  <div class="row">
-  <div class="blogpost-header">
-  <div class="col-lg-8 col-lg-offset-2">  
-    <article class="post">
-      <header class="post-header">
-        <span class="post-meta">
-          Posted by Ben Zern and Varun Sudunagunta 
-          <time datetime="2016-4-01"></time>
-        </span>
-        <h2 class="post-title">LASA FINISHES NINTH AT NATIONALS</h2>
-      </header>
-      <section class="post-excerpt">
-      <img class="img-history" src="img/team_2016.jpg" />
-      <p>The Science Olympiad team finished 9th at the National Tournament in Menomonie, Wisconsin. This is an amazing finish and was well deserved -  Congratulations everyone!</p>
-          <p>LASA finished with 3 event medals! Below are the team’s Top 15 finishes.</p>
-      <ul>
-          <li>2nd - Bridge Building - Carly Smith and Michael Yi</li>
-          <li>3rd - Fossils - Varun Sudunagunta and Carly Smith</li>
-          <li>5th - Invasive Species - Prerna Kundalgurki and Varun Sudunagunta</li>
-          <li>8th - Green Generation - Varun Sudunagunta and Edward Lee</li>
-          <li>9th - Dynamic Planet - Rebekah Albach and Shubhanga Ballal</li>
-          <li>9th - GeoLogic Mapping - Rebekah Albach and Shubhanga Ballal</li>
-          <li>9th - Hydrogeology - Rebekah Albach and Michael Taleff</li>
-          <li>11th - Forensics - Zennie Wey and Akshara Anand</li>
-          <li>11th - Protein Modeling - Michael Taleff, Edward Lee, and Niels Kornerup</li>
-          <li>11th - Air Trajectory - Ben Zern and Alec Schultz</li>
-          <li>11th - Electric Vehicle - Ben Zern and Kevin Black</li>
-          <li>12th - Anatomy and Physiology - Edward Lee and Niels Kornerup</li>
-          <li>12th - Wright Stuff - Alec Schultz and Michael Yi</li>
-          <li>14th - Astronomy - Shubhanga Ballal and Prerna Kundalgurki</li>
-          <li>14th - Game On - Neil Patil and Kevin Black</li>
-          <li>15th - Cell Biology - Edward Lee and Niels Kornerup</li>
-
-          </ul>
-      </section>
-    </article>
-    <hr class="section-heading-spacer">
-    <div class="clearfix"></div>
-  </div>  
-  </div>
-</div>
-       
-       
-       
-       
-       
-       
-        <!-- STATE -->
-  <div class="row">
-  <div class="blogpost-header">
-  <div class="col-lg-8 col-lg-offset-2">  
-    <article class="post">
-      <header class="post-header">
-        <span class="post-meta">
-          Posted by Ben Zern and Varun Sudunagunta 
-          <time datetime="2016-4-26"></time>
-        </span>
-        <h2 class="post-title">LASA WINS STATE</h2>
-      </header>
-      <section class="post-excerpt">
-      <img class="img-history" src="img/team_state_2016.jpg" />
-      <p>Congratulations everyone on another state championship! This is the second consecutive state win - Sic’em jags!</p>
-          <p>Below are the Top 4 finishes:</p>
-      <ul>
-          <li>1st - Air Trajectory - Ben Zern and Alec Schultz</li>
-          <li>1st - Bridge Building - Carly Smith and Michael Yi</li>
-          <li>1st - Robot Arm - Carly Smith and Kevin Black</li>
-          <li>1st - Astronomy - Shubhanga Ballal and Prerna Kundalgurki</li>
-          <li>1st - Experimental Design - Kevin Black, Zennie Wey, and Neil Patil</li>
-          <li>1st - Fermi Questions - Ben Zern and Edward Lee</li>
-          <li>1st - Fossils - Varun Sudunagunta and Carly Smith</li>
-          <li>1st - Hydrogeology - Rebekah Albach and Michael Taleff</li>
-          <li>1st - Invasive Species - Prerna Kundalgurki and Varun Sudunagunta</li>
-          <li>1st - Protein Modeling - Michael Taleff, Michael Yi, and Niels Kornerup</li>
-          <li>2nd - It’s About Time - Ben Zern and Kevin Black</li>
-          <li>2nd - Anatomy and Physiology - Edward Lee and Varun Sudunagunta</li>
-          <li>2nd - Cell Biology - Edward Lee and Niels Kornerup</li>
-          <li>2nd - Dynamic Planet - Rebekah Albach and Shubhanga Ballal</li>
-          <li>3rd - Forensics - Zennie Wey and Akshara Anand</li>
-          <li>3rd - GeoLogic Mapping - Rebekah Albach and Shubhanga Ballal</li>
-          <li>4th - Green Generation - Varun Sudunagunta and Edward Lee</li>
-
-
-          </ul>
-      </section>
-    </article>
-    <hr class="section-heading-spacer">
-    <div class="clearfix"></div>
-  </div>  
-  </div>
-</div>
-       
-       
-       
-       
-       
-       <!-- UT -->
-  <div class="row">
-  <div class="blogpost-header">
-  <div class="col-lg-8 col-lg-offset-2">  
-    <article class="post">
-      <header class="post-header">
-        <span class="post-meta">
-          Posted by Ben Zern and Varun Sudunagunta 
-          <time datetime="2016-4-01"></time>
-        </span>
-        <h2 class="post-title">LASA TAKES SECOND AT UT INVITATIONAL</h2>
-      </header>
-      <section class="post-excerpt">
-      <p>Congratulations to the A team for finishing 2nd and the B team for finishing 6th. Our B-Team was the best among all B-teams. Amazing job and good work! Let’s keep it up for State!</p>
-          <p>Below are the Top 5 finishes:</p>
-      <ul>
-          <li>1st - Anatomy and Physiology - Edward Lee and Varun Sudunagunta</li>
-          <li>1st - Astronomy - Shubhanga Ballal and Prerna Kundalgurki</li>
-          <li>1st - Fermi Questions - Ben Zern and Edward Lee</li>
-          <li>1st - Protein Modeling - Michael Taleff, Michael Yi, and Niels Kornerup</li>
-          <li>1st - Robot Arm - Carly Smith and Kevin Black</li>
-          <li>1st - Green Generation - Phoenix Wang and Pranathi Bingi</li>
-          <li>2nd - Air Trajectory - Ben Zern and Alec Schultz
-          <li>2nd - Cell Biology - Edward Lee and Niels Kornerup</li>
-          <li>2nd - Electric Vehicle - Ben Zern and Kevin Black</li>
-          <li>2nd - Experimental Design - Rebekah Albach, Zennie Wey, Neil Patil</li>
-          <li>2nd - Fossils - Varun Sudunagunta and Carly Smith</li>
-          <li>2nd - Game On - Neil Patil and Kevin Black</li>
-          <li>2nd - Invasive Species - Prerna Kundalgurki and Varun Sudunagunta</li>
-          <li>2nd - Wright Stuff - Alec Schultz and Michael Yi</li>
-          <li>2nd - Chemistry Lab - Ricky Zhou and Amanda Xia</li>
-          <li>2nd - Hydrogeology - Grace Jensen and Pranathi Bingi</li>
-          <li>2nd - Wind Power - Ricky Zhou and Grace Jensen</li>
-          <li>3rd - Bridge Building - Carly Smith and Michael Yi</li>
-          <li>3rd  - Chemistry Lab - Zennie Wey and Niels Kornerup</li>
-          <li>3rd - Dynamic Planet - Rebekah Albach and Shubhanga Ballal</li>
-          <li>3rd - GeoLogic Mapping - Rebekah Albach and Shubhanga Ballal</li>
-          <li>3rd - It’s About Time - Ben Zern and Kevin Black</li>
-          <li>3rd - Wind Power - Kevin Black and Neil Patil</li>
-          <li>3rd - Fermi Questions - Grace Jensen and Pranathi Bingi</li>
-          <li>3rd - Robot Arm - Andrew Kim and Abhi Dhir</li>
-          <li>3rd - Wright Stuff - Warren Zhou and Ink Dawkrajai</li>
-          <li>4th - Anatomy and Physiology - Anna Savelyeva and Amanda Xia</li>
-          <li>4th - Bridge Building - Warren Zhou and Ink Dawkrajai</li>
-          <li>5th - Green Generation - Varun Sudunagunta and Edward Lee</li>
-          <li>5th - Hydrogeology - Rebekah Albach and Michael Taleff</li>
-          <li>5th - Astronomy - Vincent Hao and Ink Dawkrajai</li>
-          <li>5th - GeoLogic Mapping - Ricky Zhou and Grace Jensen</li>
-
-          </ul>
-      </section>
-    </article>
-    <hr class="section-heading-spacer">
-    <div class="clearfix"></div>
-  </div>  
-  </div>
-</div>
-       
-        <!-- Regionals -->
-  <div class="row">
-  <div class="blogpost-header">
-  <div class="col-lg-8 col-lg-offset-2">  
-    <article class="post">
-      <header class="post-header">
-        <span class="post-meta">
-          Posted by Ben Zern and Varun Sudunagunta 
-          <time datetime="2016-3-26"></time>
-        </span>
-        <h2 class="post-title">LASA WINS REGIONALS</h2>
-      </header>
-      <section class="post-excerpt">
-      <p>Congratulations on a 1st and 2nd place finish at Regionals for the LASA A and B teams - onward to State!</p>
-      <ul>
-          <li>1st - Air Trajectory - Ben Zern and Alec Schultz</li>
-          <li>1st - Anatomy and Physiology - Edward Lee and Niels Kornerup</li>
-          <li>1st - Astronomy - Shubhanga Ballal and Prerna Kundalgurki</li>
-          <li>1st - Bridge Building - Carly Smith and Michael Yi</li>
-          <li>1st - Chemistry Lab - Zennie Wey and Niels Kornerup</li>
-          <li>1st - Experimental Design - Kevin Black, Zennie Wey, and Neil Patil</li>
-          <li>1st - Fermi Questions - Ben Zern and Edward Lee</li>
-          <li>1st - Forensics - Zennie Wey and Akshara Anand</li>
-          <li>1st - Fossils - Varun Sudunagunta and Carly Smith</li>
-          <li>1st - Game On - Phoenix Wang and Vincent Hao</li>
-          <li>1st - Green Generation - Varun Sudunagunta and Rebekah Albach</li>
-          <li>1st - It’s About Time - Ben Zern and Kevin Black</li>
-          <li>1st - Protein Modeling - Michael Taleff, Edward Lee, and Niels Kornerup</li>
-          <li>1st - Robot Arm - Carly Smita and Kevin Black</li>
-          <li>2nd - Air Trajectory - Andrew Kim and Mihir Kamble</li>
-          <li>2nd - Cell Biology - Edward Lee and Niels Kornerup</li>
-          <li>2nd - Forensics - Andrew Kim and Sreenidhi Tupuri</li>
-          <li>2nd - Game On - Neil Patil and Kevin Black</li>
-          <li>2nd - It’s About Time - Andrew Kim and Abhi Dhir</li>
-          <li>3rd - Anatomy and Physiology - Anna Savelyeva and Amanda Xia</li>
-          <li>3rd - Bridge Building - Ink Dawkrajai</li>
-          <li>3rd - Chemistry Lab - Ricky Zhou and Amanda Xia</li>
-          <li>3rd - Experimental Design - Manasa Sudunagunta, Srikari Punyamurtula, Sreenidhi Tupuri</li>
-          <li>3rd - Fossils - Manasa Sudunagunta and Sreenidhi Tupuri</li>
-          <li>3rd - Robot Arm - Andrew Kim and Abhi Dhir</li>
-          <li>3rd - Roller Coaster - Alec Schultz and Michael Yi</li>
-      </ul>
-      </section>
-    </article>
-    <hr class="section-heading-spacer">
-    <div class="clearfix"></div>
-  </div>  
-  </div>
-</div>
-       
-       
-       
-       
-<!-- Cornell -->
-  <div class="row">
-  <div class="blogpost-header">
-  <div class="col-lg-8 col-lg-offset-2">  
-    <article class="post">
-      <header class="post-header">
-        <span class="post-meta">
-          Posted by Ben Zern and Varun Sudunagunta 
-          <time datetime="2016-2-26"></time>
-        </span>
-        <h2 class="post-title">LASA WINS CORNELL</h2>
-      </header>
-      <section class="post-excerpt">
-      <img class="img-history" src="img/team_cornell_2016.jpg" />
-      <p>After being stranded in an airport without boarding passes and a long drive from Albany to Ithaca, the LASA SciO team won 1st place at the Cornell Invitational! Most notably, we beat Harriton which consistently places in the Top 10 at Nationals. LASA medaled in 18 events and received ribbons in 4. On another note, congratulations to Varun Sudunagunta and Michael Taleff for getting 2nd in Remote Sensing without studying and to Ricky Zhou and Ben Zern for receiving 5th in Optics after drawing numerous Texas flags. 
-</p> 
-          <p>Below are the Top 3 finishes:</p>
-      <ul>
-          <li>1st - Anatomy and Physiology - Edward Lee and Sam Gunn</li>
-          <li>1st - Cell Biology - Edward Lee and Sam Gunn</li>
-          <li>1st - Dynamic Planet - Rebekah Albach and Michael Taleff</li>
-          <li>1st - Experimental Design - Varun Sudunagunta, Ricky Zhou, and Neil Patil</li>
-          <li>1st - Fossils - Varun Sudunagunta and Akshara Anand</li>
-          <li>1st - Game On - Neil Patil and Kevin Black</li>
-          <li>1st - It’s About Time - Ben Zern and Kevin Black</li>
-          <li>1st - Protein Modeling - Michael Taleff, Edward Lee, and Sam Gunn</li>
-          <li>1st - Robot Arm - Neil Patil and Kevin Black</li>
-          <li>2nd - Forensics - Zennie Wey and Akshara Anand</li>
-          <li>2nd - Green Generation - Varun Sudunagunta and Edward Lee</li>
-          <li>2nd - Invasive Species - Varun Sudunagunta and Prerna Kundalgurki</li>
-          <li>2nd - Remote Sensing - Varun Sudunagunta and Michael Taleff</li>
-          <li>2nd - Wright Stuff - Alec Schultz and Michael Yi</li>
-          <li>2nd - Wright it Do it - Rebekah Albach and Neil Patil</li>
-          <li>3rd - Astronomy - Prerna Kundalgurki and Zennie Wey</li>
-          <li>3rd - Bridge Building - Michael Yi and Alec Schultz</li>
-          <li>3rd - Wind Power - Ricky Zhou and Kevin Black</li>
-      </ul>
-      </section>
-    </article>
-    <hr class="section-heading-spacer">
-    <div class="clearfix"></div>
-  </div>  
-  </div>
-</div>
-       
-   <!-- MIT -->
-  <div class="row">
-  <div class="blogpost-header">
-  <div class="col-lg-8 col-lg-offset-2">  
-    <article class="post">
-      <header class="post-header">
-        <span class="post-meta">
-          Posted by Ben Zern and Varun Sudunagunta 
-          <time datetime="2016-1-26"></time>
-        </span>
-        <h2 class="post-title">LASA PLACES FOURTH AT MIT</h2>
-      </header>
-      <section class="post-excerpt">
-      <p>Congratulations for a strong 4th place finish at MIT. We Ranked the highest of the Texas teams - all three teams from Texas placed in the top 6. It is apparent that Texas is a powerhouse state and that the state competition, once again, will be brutal. Don’t mess with Texas!
-Below are the Top 6 finishes:
-</p> 
-      <ul>
-        <li>1st - Game On - Neil Patil and Kevin Black</li>
-        <li>1st - Green Generation - Varun Sudunagunta and Edward Lee</li>
-        <li>1st - Invasive Species - Varun Sudunagunta and Prerna Kundalgurki</li>
-        <li>2nd - Fossils - Varun Sudunagunta and Akshara Anand</li>
-        <li>3rd - Experimental Design - Varun Sudunagunta, Zennie Wey, and Neil Patil</li>
-        <li>4th - Forensics - Zennie Wey and Akshara Anand</li>
-        <li>4th - Wright Stuff - Alec Schultz and Michael Yi</li>
-        <li>4th - Write it Do it - Rebekah Albach and Neil Patil</li>
-        <li>6th - Astronomy - Shubhanga Ballal and Prerna Kundalgurki</li>
-        <li>6th - Dynamic Planet - Rebekah Albach and Shubhanga Ballal</li>
-      </ul>
-      </section>
-    </article>
-    <hr class="section-heading-spacer">
-    <div class="clearfix"></div>
-  </div>  
-  </div>
-</div>
-       
-       <!-- NATS -->
-  <div class="row">
-  <div class="blogpost-header">
-  <div class="col-lg-8 col-lg-offset-2">  
-    <article class="post">
-      <header class="post-header">
-        <span class="post-meta">
-          Posted by Neil Patil on 
-          <time datetime="2015-4-26">May 18, 2015</time>
-        </span>
-        <h2 class="post-title">LASA FINISHES THIRD AT NATIONALS</h2>
-      </header>
-      <section class="post-excerpt">
-      <img class="img-history" src="img/nats_team_2015.jpg" />
-      <p>The Science Olympiad team finished in 3rd place at the National tournament in Lincoln, Nebraska! This is the best LASA has ever done, and the highest any team from Texas has ever placed.</p>
-      <p>LASA also finished with 11 event medals, more than any other team! Below are the team's national medals. </p> 
-      <ul>
-        <li>1st - It's About Time - Justin Kang and Evan Tey</li>
-        <li>1st - Scrambler - Neil Patil and Nha Nguyen</li>
-        <li>2nd - Geologic Mapping - Blake Karwoski and Dhruv Puri</li>
-        <li>2nd - Protein Modeling - Lily Xu, Sam Gunn, and Dhruv Puri</li>
-        <li>2nd - Green Generation - Varun Sudunagunta and Nha Nguyen</li>
-        <li>3rd - Dynamic Planet - Rebekah Albach and Shubhanga Ballal</li>
-        <li>4th - Cell Biology - Lily Xu and Sam Gunn</li>
-        <li>4th - Forensics - Zennie Wey and Akshara Anand</li>
-        <li>5th - Mission Possible - Neil Patil and Blake Karwoski</li>
-        <li>6th - Fossils - Varun Sudunagunta and Elena Arnold</li>
-        <li>6th - Entomology - Rebekah Albach and Zennie Wey</li>
-      </ul>
-      </section>
-    </article>
-    <hr class="section-heading-spacer">
-    <div class="clearfix"></div>
-  </div>  
-  </div>
-</div>
-
-
-  <!-- State -->
-  <div class="row">
-  <div class="blogpost-header">
-  <div class="col-lg-8 col-lg-offset-2">  
-    <article class="post">
-      <header class="post-header">
-        <span class="post-meta">
-          Posted by Evan Tey on 
-          <time datetime="2015-4-26">April 26, 2015</time>
-        </span>
-        <h2 class="post-title">LASA WINS STATE</h2>
-      </header>
-      <section class="post-excerpt">
-      <p> Congratulations everyone on the 1st place finish at State! Next up will be Nationals on May 16th in Lincoln, Nebraska. </p>
-      <p> Below are the State results. </p> 
-      <ul>
-	 <li>Air Trajectory – 3rd Place – Blake Karwoski and Ben Zern </li>
-	 <li>Anatomy – 5th Place – Sam Gunn and Dhruv Puri </li>
-	 <li>Astronomy – 1st Place -- Evan Tey and Shubhanga Ballal </li>
-	 <li>Bridge Building – 6th Place – Elena Arnold and Shubhanga Ballal </li>
-	 <li>Cell Biology – 2nd Place – Lily Xu and Sam Gunn </li>
-	 <li>Chemistry Lab – 2nd Place – Justin Kang and Sam Gunn </li>
-	 <li>Compound Machines – 2nd Place – Evan Tey and Nha Nguyen </li>
-	 <li>Disease Detectives – 1st Place – Lily Xu and Akshara Anand </li>
-	 <li>Dynamic Planet – 2nd Place -- Rebekah Albach and Shubhanga Ballal </li>
-	 <li>Entomology – 5th Place – Rebekah Albach and Zennie Wey </li>
-	 <li>Experimental Design – 9th Place – Evan Tey, Neil Patil, and Justin Kang </li>
-	 <li>Fermi Questions – 3rd Place – Blake Karwoski and Nha Nguyen </li>
-	 <li>Forensics – 9th Place – Akshara Anand and Zennie Wey </li>
-	 <li>Fossils – 1st Place – Elena Arnold and Varun Sudunagunta </li>
-	 <li>Game On – 1st Place – Evan Tey and Neil Patil </li>
-	 <li>Geologic Mapping – 1st Place – Blake Karwoski and Dhruv Puri </li>
-	 <li>Green Generation – 3rd Place – Varun Sudunagunta and Nha Nguyen </li>
-	 <li>It’s About Time – 1st Place – Evan Tey and Justin Kang </li>
-	 <li>Mission Possible – 1st Place -- Blake Karwoski and Neil Patil </li>
-	 <li>Protein Modeling – 2nd Place – Dhruv Puri, Lily Xu, and Sam Gunn </li>
-	 <li>Scrambler – 1st Place – Neil Patil and Ben Zern </li>
-	 <li>We’ve Got Your Number – 5th Place – Evan Tey and Justin Kang </li>
-	 <li>Wright Stuff – 9th Place – Elena Arnold and Shubhanga Ballal</li>
-      </ul>
-      </section>
-    </article>
-    <hr class="section-heading-spacer">
-    <div class="clearfix"></div>
-  </div>  
-  </div>
-</div>
-    <!--Regionals-->
-  <div class="row">
-  <div class="blogpost-header">
-  <div class="col-lg-8 col-lg-offset-2">  
-    <article class="post">
-      <header class="post-header">
-        <span class="post-meta">
-          Posted by Neil Patil on 
-          <time datetime="2015-2-8">March 31, 2015</time>
-        </span>
-        <h2 class="post-title">LASA WINS REGIONALS</h2>
-      </header>
-      <section class="post-excerpt">
-      <img class="img-history" src="img/regs_team_2015.jpg" />
-      <p>Great job to the A and B teams for absolute domination at regionals Saturday! LASA placed first as a school, with our A team first and the B team fourth - meaniing LASA will be going to State.</p>
-      <p> Below are 1st-3rd place finishes for specific events.</p>
-      <ul>
-        <li>1st - Air Trajectory - Ben Zern and Blake Karwoski</li>
-        <li>2nd - Air Trajectory - Alec Shultz and Wilson Nguyen</li>
-        <li>1st - Anatomy - Dhruv Puri and Sam Gunn</li>
-        <li>2nd - Anatomy - Nathan Le and Isaree Pitaktong</li>
-        <li>1st - Astronomy - Zennie Wey and Shubhanga Ballal</li>
-        <li>2nd - Astronomy - William Liu and Kevin Chau</li>
-        <li>3rd - Bungee Drop - Wilson Nguyen and Sam Grayson</li>
-        <li>1st - Cell Biology - Lily Xu and Dhruv Puri</li>
-        <li>2nd - Chemistry Lab - Sam Gunn and Justin Kang</li>
-        <li>2nd - Compound Machines - Jusin Kang, Evan Tey, and Nha Nguyen</li>
-        <li>3rd - Compound Machines - William Liu and Kevin Black</li>
-        <li>1st - Disease Detectives - Lily Xu and Akshara Anand</li>
-        <li>2nd - Disease Detectives - Nathan Le and Anna Savelyeva</li>
-        <li>1st - Dynamic Planet - Rebekah Albach and Shubhanga Ballal</li>
-        <li>1st - Entomology - Zennie Wey and Rebekah Albach</li>
-        <li>1st - Experimental Design - Neil Patil, Justin Kang, and Evan Tey</li>
-        <li>2nd - Experimental Design - Kevin Chau, Ricky Zhou, and Alec Shultz</li>
-        <li>1st - Fermi Questions - Blake Karowkski and Nha Nguyen</li>
-        <li>2nd - Forensics - Zennie Wey and Akshara Anand</li>
-        <li>3rd - Forensics - Shivang Singh and Sam Grayson</li>
-        <li>2nd - Fossils - Elena Arnold and Varun Sudunagunta</li>
-        <li>1st - Game On - Neil Patil and Elena Arnold</li>
-        <li>1st - Geologic Mapping - Dhruv Puri and Blake Karwoski</li>
-        <li>1st - Green Generation - Isaree Pitaktong and Shinjini Ray</li>
-        <li>2nd - Green Generation - Varun Sudunagunta and Nha Nguyen</li>
-        <li>1st - It's About Time - Evan Tey, Justin Kang, and Blake Karwoski</li>
-        <li>1st - Mission Possible - Neil Patil and Blake Karwoski</li>
-        <li>2nd - Mission Possible - Andrew Kim</li>
-        <li>1st - Protein Modeling - Dhruv Puri, Sam Gunn, and Lily Xu</li>
-        <li>1st - Technical Problem Solving - Evan Tey and Justin Kang</li>
-        <li>2nd - Technical Problem Solving - Sam Grayson and Kevin Black</li>
-        <li>2nd - We've Got Your Number - Ricky Zhou and Nathan Le</li>
-        <li>1st - Wright Stuff - Elena Arnold and Shubhanga Ballal</li>
-        <li>2nd - Write It Do It - Kevin Black and Ricky Zhou</li>
-      </ul>
-      <p>Congratulations everyone! Now it's time to look towards State. We definitely have a shot for an undefeated season this year.</p>
-      </section>
-    </article>
-    <hr class="section-heading-spacer">
-    <div class="clearfix"></div>
-  </div>  
-  </div>
-</div>   
-
-   <!--Wright State-->
-	<div class="row">
-	<div class="blogpost-header">
-	<div class="col-lg-8 col-lg-offset-2">	
-		<article class="post">
-			<header class="post-header">
-				<span class="post-meta">
-					Posted by Evan Tey on 
-					<time datetime="2015-2-8">February 8, 2015</time>
-				</span>
-				<h2 class="post-title">LASA WINS WRIGHT STATE</h2>
-			</header>
-			<section class="post-excerpt">
-                       	<img class="img-history" src="img/wright_state_team_2015.jpg" />
-			<p> Great job to the A team for a FIRST PLACE finish at the Wright State Invitional. The B team wasn't too far behind, taking 13th place.</p>
-			<p> Below are 1st-8th place finishes for specific events.</p>
-			<ul>
-				<li>8th - Air Trajectory - Blake Karwoski and Ben Zern</li>
-				<li>4th - Air Trajectory - Wilson Nguyen and Alec Schultz</li>
-				<li>1st - Anatomy and Physiology - Lily Xu and Sam Gunn</li>
-				<li>4th - Anatomy and Physiology - Nathan Le and Anna Savelyeva</li>
-				<li>2nd - Astronomy - Evan Tey and Akshara Anand</li>
-				<li>7th - Bridge Building - Elena Arnold and Sam Grayson</li>
-				<li>4th - Cell Biology - Lily Xu and Sam Gunn</li>
-				<li>5th - Chemistry Lab - Justin Kang and Sam Gunn</li>
-				<li>3rd - Compound Machines - Evan Tey and Justin Kang</li>
-				<li>1st - Disease Detectives - Lily Xu and Akshara Anand</li>
-				<li>5th - Dynamic Planet - Rebekah Albach and Varun Sudunagunta</li>
-				<li>3rd - Experimental Design - Neil Patil, Justin Kang, and Dhruv Puri</li>
-				<li>6th - Forensics - Akshara Anand and Sam Grayson</li>
-				<li>1st - Fossils - Varun Sudunagunta and Elena Arnold</li>
-				<li>2nd - Geologic Mapping - Blake Karwoski and Dhruv Puri</li>
-				<li>6th - Geologic Mapping - Nathan Le and Shinjini Ray</li>
-				<li>6th - Green Generation - Isaree Pitakong and Varun Sudunagunta</li>
-				<li>1st - It's About Time - Evan Tey and Justin Kang</li>
-				<li>6th - It's About Time - William Liu and Wilson Nguyen</li>
-				<li>2nd - Protein Modeling - Dhruv Puri, Sam Gunn, and Isaree Pitakong</li>
-				<li>6th - Scrambler - Neil Patil and Ben Zern</li>
-				<li>8th - Wright Stuff - Elena Arnold and Ben Zern</li>
-			</ul>
-			<p>Congratulations everyone! Now it's time to look towards Regionals and State!</p>
-			</section>
-		</article>
-		<hr class="section-heading-spacer">
-		<div class="clearfix"></div>
-	</div>	
-	</div>
-</div>   	
-   <!-- MIT -->
-        <div class="row">
-            <div class="blogpost-header">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <article class="post">
-                        <header class="post-header">
-                            <span class="post-meta">
+            <!-- STATE -->
+            <div class="row">
+                <div class="blogpost-header">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <article class="post">
+                            <header class="post-header">
+                                <span class="post-meta">
+                                Posted by Ben Zern and Varun Sudunagunta 
+                                <time datetime="2016-4-26"></time>
+                                </span>
+                                <h2 class="post-title">LASA WINS STATE</h2>
+                            </header>
+                            <section class="post-excerpt">
+                                <img class="img-history" src="img/team_state_2016.jpg" />
+                                <p>Congratulations everyone on another state championship! This is the second consecutive state win - Sic’em jags!</p>
+                                <p>Below are the Top 4 finishes:</p>
+                                <ul>
+                                    <li>1st - Air Trajectory - Ben Zern and Alec Schultz</li>
+                                    <li>1st - Bridge Building - Carly Smith and Michael Yi</li>
+                                    <li>1st - Robot Arm - Carly Smith and Kevin Black</li>
+                                    <li>1st - Astronomy - Shubhanga Ballal and Prerna Kundalgurki</li>
+                                    <li>1st - Experimental Design - Kevin Black, Zennie Wey, and Neil Patil</li>
+                                    <li>1st - Fermi Questions - Ben Zern and Edward Lee</li>
+                                    <li>1st - Fossils - Varun Sudunagunta and Carly Smith</li>
+                                    <li>1st - Hydrogeology - Rebekah Albach and Michael Taleff</li>
+                                    <li>1st - Invasive Species - Prerna Kundalgurki and Varun Sudunagunta</li>
+                                    <li>1st - Protein Modeling - Michael Taleff, Michael Yi, and Niels Kornerup</li>
+                                    <li>2nd - It’s About Time - Ben Zern and Kevin Black</li>
+                                    <li>2nd - Anatomy and Physiology - Edward Lee and Varun Sudunagunta</li>
+                                    <li>2nd - Cell Biology - Edward Lee and Niels Kornerup</li>
+                                    <li>2nd - Dynamic Planet - Rebekah Albach and Shubhanga Ballal</li>
+                                    <li>3rd - Forensics - Zennie Wey and Akshara Anand</li>
+                                    <li>3rd - GeoLogic Mapping - Rebekah Albach and Shubhanga Ballal</li>
+                                    <li>4th - Green Generation - Varun Sudunagunta and Edward Lee</li>
+                                </ul>
+                            </section>
+                        </article>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- UT -->
+            <div class="row">
+                <div class="blogpost-header">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <article class="post">
+                            <header class="post-header">
+                                <span class="post-meta">
+                                Posted by Ben Zern and Varun Sudunagunta 
+                                <time datetime="2016-4-01"></time>
+                                </span>
+                                <h2 class="post-title">LASA TAKES SECOND AT UT INVITATIONAL</h2>
+                            </header>
+                            <section class="post-excerpt">
+                                <p>Congratulations to the A team for finishing 2nd and the B team for finishing 6th. Our B-Team was the best among all B-teams. Amazing job and good work! Let’s keep it up for State!</p>
+                                <p>Below are the Top 5 finishes:</p>
+                                <ul>
+                                    <li>1st - Anatomy and Physiology - Edward Lee and Varun Sudunagunta</li>
+                                    <li>1st - Astronomy - Shubhanga Ballal and Prerna Kundalgurki</li>
+                                    <li>1st - Fermi Questions - Ben Zern and Edward Lee</li>
+                                    <li>1st - Protein Modeling - Michael Taleff, Michael Yi, and Niels Kornerup</li>
+                                    <li>1st - Robot Arm - Carly Smith and Kevin Black</li>
+                                    <li>1st - Green Generation - Phoenix Wang and Pranathi Bingi</li>
+                                    <li>2nd - Air Trajectory - Ben Zern and Alec Schultz
+                                    <li>2nd - Cell Biology - Edward Lee and Niels Kornerup</li>
+                                    <li>2nd - Electric Vehicle - Ben Zern and Kevin Black</li>
+                                    <li>2nd - Experimental Design - Rebekah Albach, Zennie Wey, Neil Patil</li>
+                                    <li>2nd - Fossils - Varun Sudunagunta and Carly Smith</li>
+                                    <li>2nd - Game On - Neil Patil and Kevin Black</li>
+                                    <li>2nd - Invasive Species - Prerna Kundalgurki and Varun Sudunagunta</li>
+                                    <li>2nd - Wright Stuff - Alec Schultz and Michael Yi</li>
+                                    <li>2nd - Chemistry Lab - Ricky Zhou and Amanda Xia</li>
+                                    <li>2nd - Hydrogeology - Grace Jensen and Pranathi Bingi</li>
+                                    <li>2nd - Wind Power - Ricky Zhou and Grace Jensen</li>
+                                    <li>3rd - Bridge Building - Carly Smith and Michael Yi</li>
+                                    <li>3rd  - Chemistry Lab - Zennie Wey and Niels Kornerup</li>
+                                    <li>3rd - Dynamic Planet - Rebekah Albach and Shubhanga Ballal</li>
+                                    <li>3rd - GeoLogic Mapping - Rebekah Albach and Shubhanga Ballal</li>
+                                    <li>3rd - It’s About Time - Ben Zern and Kevin Black</li>
+                                    <li>3rd - Wind Power - Kevin Black and Neil Patil</li>
+                                    <li>3rd - Fermi Questions - Grace Jensen and Pranathi Bingi</li>
+                                    <li>3rd - Robot Arm - Andrew Kim and Abhi Dhir</li>
+                                    <li>3rd - Wright Stuff - Warren Zhou and Ink Dawkrajai</li>
+                                    <li>4th - Anatomy and Physiology - Anna Savelyeva and Amanda Xia</li>
+                                    <li>4th - Bridge Building - Warren Zhou and Ink Dawkrajai</li>
+                                    <li>5th - Green Generation - Varun Sudunagunta and Edward Lee</li>
+                                    <li>5th - Hydrogeology - Rebekah Albach and Michael Taleff</li>
+                                    <li>5th - Astronomy - Vincent Hao and Ink Dawkrajai</li>
+                                    <li>5th - GeoLogic Mapping - Ricky Zhou and Grace Jensen</li>
+                                </ul>
+                            </section>
+                        </article>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Regionals -->
+            <div class="row">
+                <div class="blogpost-header">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <article class="post">
+                            <header class="post-header">
+                                <span class="post-meta">
+                                Posted by Ben Zern and Varun Sudunagunta 
+                                <time datetime="2016-3-26"></time>
+                                </span>
+                                <h2 class="post-title">LASA WINS REGIONALS</h2>
+                            </header>
+                            <section class="post-excerpt">
+                                <p>Congratulations on a 1st and 2nd place finish at Regionals for the LASA A and B teams - onward to State!</p>
+                                <ul>
+                                    <li>1st - Air Trajectory - Ben Zern and Alec Schultz</li>
+                                    <li>1st - Anatomy and Physiology - Edward Lee and Niels Kornerup</li>
+                                    <li>1st - Astronomy - Shubhanga Ballal and Prerna Kundalgurki</li>
+                                    <li>1st - Bridge Building - Carly Smith and Michael Yi</li>
+                                    <li>1st - Chemistry Lab - Zennie Wey and Niels Kornerup</li>
+                                    <li>1st - Experimental Design - Kevin Black, Zennie Wey, and Neil Patil</li>
+                                    <li>1st - Fermi Questions - Ben Zern and Edward Lee</li>
+                                    <li>1st - Forensics - Zennie Wey and Akshara Anand</li>
+                                    <li>1st - Fossils - Varun Sudunagunta and Carly Smith</li>
+                                    <li>1st - Game On - Phoenix Wang and Vincent Hao</li>
+                                    <li>1st - Green Generation - Varun Sudunagunta and Rebekah Albach</li>
+                                    <li>1st - It’s About Time - Ben Zern and Kevin Black</li>
+                                    <li>1st - Protein Modeling - Michael Taleff, Edward Lee, and Niels Kornerup</li>
+                                    <li>1st - Robot Arm - Carly Smita and Kevin Black</li>
+                                    <li>2nd - Air Trajectory - Andrew Kim and Mihir Kamble</li>
+                                    <li>2nd - Cell Biology - Edward Lee and Niels Kornerup</li>
+                                    <li>2nd - Forensics - Andrew Kim and Sreenidhi Tupuri</li>
+                                    <li>2nd - Game On - Neil Patil and Kevin Black</li>
+                                    <li>2nd - It’s About Time - Andrew Kim and Abhi Dhir</li>
+                                    <li>3rd - Anatomy and Physiology - Anna Savelyeva and Amanda Xia</li>
+                                    <li>3rd - Bridge Building - Ink Dawkrajai</li>
+                                    <li>3rd - Chemistry Lab - Ricky Zhou and Amanda Xia</li>
+                                    <li>3rd - Experimental Design - Manasa Sudunagunta, Srikari Punyamurtula, Sreenidhi Tupuri</li>
+                                    <li>3rd - Fossils - Manasa Sudunagunta and Sreenidhi Tupuri</li>
+                                    <li>3rd - Robot Arm - Andrew Kim and Abhi Dhir</li>
+                                    <li>3rd - Roller Coaster - Alec Schultz and Michael Yi</li>
+                                </ul>
+                            </section>
+                        </article>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Cornell -->
+            <div class="row">
+                <div class="blogpost-header">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <article class="post">
+                            <header class="post-header">
+                                <span class="post-meta">
+                                Posted by Ben Zern and Varun Sudunagunta 
+                                <time datetime="2016-2-26"></time>
+                                </span>
+                                <h2 class="post-title">LASA WINS CORNELL</h2>
+                            </header>
+                            <section class="post-excerpt">
+                                <img class="img-history" src="img/team_cornell_2016.jpg" />
+                                <p>After being stranded in an airport without boarding passes and a long drive from Albany to Ithaca, the LASA SciO team won 1st place at the Cornell Invitational! Most notably, we beat Harriton which consistently places in the Top 10 at Nationals. LASA medaled in 18 events and received ribbons in 4. On another note, congratulations to Varun Sudunagunta and Michael Taleff for getting 2nd in Remote Sensing without studying and to Ricky Zhou and Ben Zern for receiving 5th in Optics after drawing numerous Texas flags. </p>
+                                <p>Below are the Top 3 finishes:</p>
+                                <ul>
+                                    <li>1st - Anatomy and Physiology - Edward Lee and Sam Gunn</li>
+                                    <li>1st - Cell Biology - Edward Lee and Sam Gunn</li>
+                                    <li>1st - Dynamic Planet - Rebekah Albach and Michael Taleff</li>
+                                    <li>1st - Experimental Design - Varun Sudunagunta, Ricky Zhou, and Neil Patil</li>
+                                    <li>1st - Fossils - Varun Sudunagunta and Akshara Anand</li>
+                                    <li>1st - Game On - Neil Patil and Kevin Black</li>
+                                    <li>1st - It’s About Time - Ben Zern and Kevin Black</li>
+                                    <li>1st - Protein Modeling - Michael Taleff, Edward Lee, and Sam Gunn</li>
+                                    <li>1st - Robot Arm - Neil Patil and Kevin Black</li>
+                                    <li>2nd - Forensics - Zennie Wey and Akshara Anand</li>
+                                    <li>2nd - Green Generation - Varun Sudunagunta and Edward Lee</li>
+                                    <li>2nd - Invasive Species - Varun Sudunagunta and Prerna Kundalgurki</li>
+                                    <li>2nd - Remote Sensing - Varun Sudunagunta and Michael Taleff</li>
+                                    <li>2nd - Wright Stuff - Alec Schultz and Michael Yi</li>
+                                    <li>2nd - Wright it Do it - Rebekah Albach and Neil Patil</li>
+                                    <li>3rd - Astronomy - Prerna Kundalgurki and Zennie Wey</li>
+                                    <li>3rd - Bridge Building - Michael Yi and Alec Schultz</li>
+                                    <li>3rd - Wind Power - Ricky Zhou and Kevin Black</li>
+                                </ul>
+                            </section>
+                        </article>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- MIT -->
+            <div class="row">
+                <div class="blogpost-header">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <article class="post">
+                            <header class="post-header">
+                                <span class="post-meta">
+                                Posted by Ben Zern and Varun Sudunagunta 
+                                <time datetime="2016-1-26"></time>
+                                </span>
+                                <h2 class="post-title">LASA PLACES FOURTH AT MIT</h2>
+                            </header>
+                            <section class="post-excerpt">
+                                <p>Congratulations for a strong 4th place finish at MIT. We Ranked the highest of the Texas teams - all three teams from Texas placed in the top 6. It is apparent that Texas is a powerhouse state and that the state competition, once again, will be brutal. Don’t mess with Texas!
+                                    Below are the Top 6 finishes:
+                                </p>
+                                <ul>
+                                    <li>1st - Game On - Neil Patil and Kevin Black</li>
+                                    <li>1st - Green Generation - Varun Sudunagunta and Edward Lee</li>
+                                    <li>1st - Invasive Species - Varun Sudunagunta and Prerna Kundalgurki</li>
+                                    <li>2nd - Fossils - Varun Sudunagunta and Akshara Anand</li>
+                                    <li>3rd - Experimental Design - Varun Sudunagunta, Zennie Wey, and Neil Patil</li>
+                                    <li>4th - Forensics - Zennie Wey and Akshara Anand</li>
+                                    <li>4th - Wright Stuff - Alec Schultz and Michael Yi</li>
+                                    <li>4th - Write it Do it - Rebekah Albach and Neil Patil</li>
+                                    <li>6th - Astronomy - Shubhanga Ballal and Prerna Kundalgurki</li>
+                                    <li>6th - Dynamic Planet - Rebekah Albach and Shubhanga Ballal</li>
+                                </ul>
+                            </section>
+                        </article>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- NATS -->
+            <div class="row">
+                <div class="blogpost-header">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <article class="post">
+                            <header class="post-header">
+                                <span class="post-meta">
+                                Posted by Neil Patil on 
+                                <time datetime="2015-4-26">May 18, 2015</time>
+                                </span>
+                                <h2 class="post-title">LASA FINISHES THIRD AT NATIONALS</h2>
+                            </header>
+                            <section class="post-excerpt">
+                                <img class="img-history" src="img/nats_team_2015.jpg" />
+                                <p>The Science Olympiad team finished in 3rd place at the National tournament in Lincoln, Nebraska! This is the best LASA has ever done, and the highest any team from Texas has ever placed.</p>
+                                <p>LASA also finished with 11 event medals, more than any other team! Below are the team's national medals. </p>
+                                <ul>
+                                    <li>1st - It's About Time - Justin Kang and Evan Tey</li>
+                                    <li>1st - Scrambler - Neil Patil and Nha Nguyen</li>
+                                    <li>2nd - Geologic Mapping - Blake Karwoski and Dhruv Puri</li>
+                                    <li>2nd - Protein Modeling - Lily Xu, Sam Gunn, and Dhruv Puri</li>
+                                    <li>2nd - Green Generation - Varun Sudunagunta and Nha Nguyen</li>
+                                    <li>3rd - Dynamic Planet - Rebekah Albach and Shubhanga Ballal</li>
+                                    <li>4th - Cell Biology - Lily Xu and Sam Gunn</li>
+                                    <li>4th - Forensics - Zennie Wey and Akshara Anand</li>
+                                    <li>5th - Mission Possible - Neil Patil and Blake Karwoski</li>
+                                    <li>6th - Fossils - Varun Sudunagunta and Elena Arnold</li>
+                                    <li>6th - Entomology - Rebekah Albach and Zennie Wey</li>
+                                </ul>
+                            </section>
+                        </article>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- State -->
+            <div class="row">
+                <div class="blogpost-header">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <article class="post">
+                            <header class="post-header">
+                                <span class="post-meta">
+                                Posted by Evan Tey on 
+                                <time datetime="2015-4-26">April 26, 2015</time>
+                                </span>
+                                <h2 class="post-title">LASA WINS STATE</h2>
+                            </header>
+                            <section class="post-excerpt">
+                                <p> Congratulations everyone on the 1st place finish at State! Next up will be Nationals on May 16th in Lincoln, Nebraska. </p>
+                                <p> Below are the State results. </p>
+                                <ul>
+                                    <li>Air Trajectory – 3rd Place – Blake Karwoski and Ben Zern </li>
+                                    <li>Anatomy – 5th Place – Sam Gunn and Dhruv Puri </li>
+                                    <li>Astronomy – 1st Place -- Evan Tey and Shubhanga Ballal </li>
+                                    <li>Bridge Building – 6th Place – Elena Arnold and Shubhanga Ballal </li>
+                                    <li>Cell Biology – 2nd Place – Lily Xu and Sam Gunn </li>
+                                    <li>Chemistry Lab – 2nd Place – Justin Kang and Sam Gunn </li>
+                                    <li>Compound Machines – 2nd Place – Evan Tey and Nha Nguyen </li>
+                                    <li>Disease Detectives – 1st Place – Lily Xu and Akshara Anand </li>
+                                    <li>Dynamic Planet – 2nd Place -- Rebekah Albach and Shubhanga Ballal </li>
+                                    <li>Entomology – 5th Place – Rebekah Albach and Zennie Wey </li>
+                                    <li>Experimental Design – 9th Place – Evan Tey, Neil Patil, and Justin Kang </li>
+                                    <li>Fermi Questions – 3rd Place – Blake Karwoski and Nha Nguyen </li>
+                                    <li>Forensics – 9th Place – Akshara Anand and Zennie Wey </li>
+                                    <li>Fossils – 1st Place – Elena Arnold and Varun Sudunagunta </li>
+                                    <li>Game On – 1st Place – Evan Tey and Neil Patil </li>
+                                    <li>Geologic Mapping – 1st Place – Blake Karwoski and Dhruv Puri </li>
+                                    <li>Green Generation – 3rd Place – Varun Sudunagunta and Nha Nguyen </li>
+                                    <li>It’s About Time – 1st Place – Evan Tey and Justin Kang </li>
+                                    <li>Mission Possible – 1st Place -- Blake Karwoski and Neil Patil </li>
+                                    <li>Protein Modeling – 2nd Place – Dhruv Puri, Lily Xu, and Sam Gunn </li>
+                                    <li>Scrambler – 1st Place – Neil Patil and Ben Zern </li>
+                                    <li>We’ve Got Your Number – 5th Place – Evan Tey and Justin Kang </li>
+                                    <li>Wright Stuff – 9th Place – Elena Arnold and Shubhanga Ballal</li>
+                                </ul>
+                            </section>
+                        </article>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <!--Regionals-->
+            <div class="row">
+                <div class="blogpost-header">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <article class="post">
+                            <header class="post-header">
+                                <span class="post-meta">
+                                Posted by Neil Patil on 
+                                <time datetime="2015-2-8">March 31, 2015</time>
+                                </span>
+                                <h2 class="post-title">LASA WINS REGIONALS</h2>
+                            </header>
+                            <section class="post-excerpt">
+                                <img class="img-history" src="img/regs_team_2015.jpg" />
+                                <p>Great job to the A and B teams for absolute domination at regionals Saturday! LASA placed first as a school, with our A team first and the B team fourth - meaniing LASA will be going to State.</p>
+                                <p> Below are 1st-3rd place finishes for specific events.</p>
+                                <ul>
+                                    <li>1st - Air Trajectory - Ben Zern and Blake Karwoski</li>
+                                    <li>2nd - Air Trajectory - Alec Shultz and Wilson Nguyen</li>
+                                    <li>1st - Anatomy - Dhruv Puri and Sam Gunn</li>
+                                    <li>2nd - Anatomy - Nathan Le and Isaree Pitaktong</li>
+                                    <li>1st - Astronomy - Zennie Wey and Shubhanga Ballal</li>
+                                    <li>2nd - Astronomy - William Liu and Kevin Chau</li>
+                                    <li>3rd - Bungee Drop - Wilson Nguyen and Sam Grayson</li>
+                                    <li>1st - Cell Biology - Lily Xu and Dhruv Puri</li>
+                                    <li>2nd - Chemistry Lab - Sam Gunn and Justin Kang</li>
+                                    <li>2nd - Compound Machines - Jusin Kang, Evan Tey, and Nha Nguyen</li>
+                                    <li>3rd - Compound Machines - William Liu and Kevin Black</li>
+                                    <li>1st - Disease Detectives - Lily Xu and Akshara Anand</li>
+                                    <li>2nd - Disease Detectives - Nathan Le and Anna Savelyeva</li>
+                                    <li>1st - Dynamic Planet - Rebekah Albach and Shubhanga Ballal</li>
+                                    <li>1st - Entomology - Zennie Wey and Rebekah Albach</li>
+                                    <li>1st - Experimental Design - Neil Patil, Justin Kang, and Evan Tey</li>
+                                    <li>2nd - Experimental Design - Kevin Chau, Ricky Zhou, and Alec Shultz</li>
+                                    <li>1st - Fermi Questions - Blake Karowkski and Nha Nguyen</li>
+                                    <li>2nd - Forensics - Zennie Wey and Akshara Anand</li>
+                                    <li>3rd - Forensics - Shivang Singh and Sam Grayson</li>
+                                    <li>2nd - Fossils - Elena Arnold and Varun Sudunagunta</li>
+                                    <li>1st - Game On - Neil Patil and Elena Arnold</li>
+                                    <li>1st - Geologic Mapping - Dhruv Puri and Blake Karwoski</li>
+                                    <li>1st - Green Generation - Isaree Pitaktong and Shinjini Ray</li>
+                                    <li>2nd - Green Generation - Varun Sudunagunta and Nha Nguyen</li>
+                                    <li>1st - It's About Time - Evan Tey, Justin Kang, and Blake Karwoski</li>
+                                    <li>1st - Mission Possible - Neil Patil and Blake Karwoski</li>
+                                    <li>2nd - Mission Possible - Andrew Kim</li>
+                                    <li>1st - Protein Modeling - Dhruv Puri, Sam Gunn, and Lily Xu</li>
+                                    <li>1st - Technical Problem Solving - Evan Tey and Justin Kang</li>
+                                    <li>2nd - Technical Problem Solving - Sam Grayson and Kevin Black</li>
+                                    <li>2nd - We've Got Your Number - Ricky Zhou and Nathan Le</li>
+                                    <li>1st - Wright Stuff - Elena Arnold and Shubhanga Ballal</li>
+                                    <li>2nd - Write It Do It - Kevin Black and Ricky Zhou</li>
+                                </ul>
+                                <p>Congratulations everyone! Now it's time to look towards State. We definitely have a shot for an undefeated season this year.</p>
+                            </section>
+                        </article>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <!--Wright State-->
+            <div class="row">
+                <div class="blogpost-header">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <article class="post">
+                            <header class="post-header">
+                                <span class="post-meta">
+                                Posted by Evan Tey on 
+                                <time datetime="2015-2-8">February 8, 2015</time>
+                                </span>
+                                <h2 class="post-title">LASA WINS WRIGHT STATE</h2>
+                            </header>
+                            <section class="post-excerpt">
+                                <img class="img-history" src="img/wright_state_team_2015.jpg" />
+                                <p> Great job to the A team for a FIRST PLACE finish at the Wright State Invitional. The B team wasn't too far behind, taking 13th place.</p>
+                                <p> Below are 1st-8th place finishes for specific events.</p>
+                                <ul>
+                                    <li>8th - Air Trajectory - Blake Karwoski and Ben Zern</li>
+                                    <li>4th - Air Trajectory - Wilson Nguyen and Alec Schultz</li>
+                                    <li>1st - Anatomy and Physiology - Lily Xu and Sam Gunn</li>
+                                    <li>4th - Anatomy and Physiology - Nathan Le and Anna Savelyeva</li>
+                                    <li>2nd - Astronomy - Evan Tey and Akshara Anand</li>
+                                    <li>7th - Bridge Building - Elena Arnold and Sam Grayson</li>
+                                    <li>4th - Cell Biology - Lily Xu and Sam Gunn</li>
+                                    <li>5th - Chemistry Lab - Justin Kang and Sam Gunn</li>
+                                    <li>3rd - Compound Machines - Evan Tey and Justin Kang</li>
+                                    <li>1st - Disease Detectives - Lily Xu and Akshara Anand</li>
+                                    <li>5th - Dynamic Planet - Rebekah Albach and Varun Sudunagunta</li>
+                                    <li>3rd - Experimental Design - Neil Patil, Justin Kang, and Dhruv Puri</li>
+                                    <li>6th - Forensics - Akshara Anand and Sam Grayson</li>
+                                    <li>1st - Fossils - Varun Sudunagunta and Elena Arnold</li>
+                                    <li>2nd - Geologic Mapping - Blake Karwoski and Dhruv Puri</li>
+                                    <li>6th - Geologic Mapping - Nathan Le and Shinjini Ray</li>
+                                    <li>6th - Green Generation - Isaree Pitakong and Varun Sudunagunta</li>
+                                    <li>1st - It's About Time - Evan Tey and Justin Kang</li>
+                                    <li>6th - It's About Time - William Liu and Wilson Nguyen</li>
+                                    <li>2nd - Protein Modeling - Dhruv Puri, Sam Gunn, and Isaree Pitakong</li>
+                                    <li>6th - Scrambler - Neil Patil and Ben Zern</li>
+                                    <li>8th - Wright Stuff - Elena Arnold and Ben Zern</li>
+                                </ul>
+                                <p>Congratulations everyone! Now it's time to look towards Regionals and State!</p>
+                            </section>
+                        </article>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- MIT -->
+            <div class="row">
+                <div class="blogpost-header">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <article class="post">
+                            <header class="post-header">
+                                <span class="post-meta">
                                 Posted by Neil Patil on
                                 <time datetime="2015-1-25">January 25, 2015</time>
-                            </span>
-                            <h2 class="post-title">LASA WINS MIT!</h2>
-                        </header>
-                        <section class="post-excerpt">   
-                        <p>LASA <b>won</b> the invitational tournament attended last weekend at MIT!</p>
-                       	<img class="img-history" src="img/mit_team_2015.jpg" />
-			    <p>This is our first ever out-of-state tournament win!</p>
-                            <p>Below are the top 5 finishes in each event.</p>
-                            <ul>
-                              <li>1st - Air Trajectory - Ben Zern and Blake Karwoski</li>
-                              <li>2nd - Experimental Design - Neil Patil, Justin Kang, and Lily Xu</li>
-                              <li>5th - Cell Biology - Lily Xu and Varun Sudunagunta</li>
-                              <li>2nd - Disease Detectives - Lily Xu and Akshara Anand</li>
-                              <li>1st - Protein Modeling - Dhruv Puri, Sam Gunn, and Akshara Anand</li>
-                              <li>3rd - Technical Problem Solving - Justin Kang and Evan Tey</li>
-                              <li>2nd - Dynamic Planet - Sam Gunn and Rebekah Albach</li>
-                              <li>1st - Green Generation - Nha Nguyen and Varun Sudunagunta</li>
-                              <li>3rd - Mission Possible - Neil Patil and Blake Karwoski</li>
-                              <li>1st - Anatomy &amp; Physiology - Lily Xu and Dhruv Puri</li>
-                              <li>3rd - Forensics - Zennie Wey and Akshara Anand</li>
-                              <li>2nd - Fossils - Elena Arnold and Varun Sudunagunta</li>
-                              <li>1st - Geologic Mapping- Geologic Mapping and Dhruv Puri</li>
-                              <li>5th - It's About Time - Blake Karwoski and Evan Tey</li>
-                            </ul>
-
-                            <p>Congratulations everyone on an amazing job! Let's see if we can do it again - our next tournament, Wright State, is in a few weeks. </p>
-                        </section>
-                    </article>
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
+                                </span>
+                                <h2 class="post-title">LASA WINS MIT!</h2>
+                            </header>
+                            <section class="post-excerpt">
+                                <p>LASA <b>won</b> the invitational tournament attended last weekend at MIT!</p>
+                                <img class="img-history" src="img/mit_team_2015.jpg" />
+                                <p>This is our first ever out-of-state tournament win!</p>
+                                <p>Below are the top 5 finishes in each event.</p>
+                                <ul>
+                                    <li>1st - Air Trajectory - Ben Zern and Blake Karwoski</li>
+                                    <li>2nd - Experimental Design - Neil Patil, Justin Kang, and Lily Xu</li>
+                                    <li>5th - Cell Biology - Lily Xu and Varun Sudunagunta</li>
+                                    <li>2nd - Disease Detectives - Lily Xu and Akshara Anand</li>
+                                    <li>1st - Protein Modeling - Dhruv Puri, Sam Gunn, and Akshara Anand</li>
+                                    <li>3rd - Technical Problem Solving - Justin Kang and Evan Tey</li>
+                                    <li>2nd - Dynamic Planet - Sam Gunn and Rebekah Albach</li>
+                                    <li>1st - Green Generation - Nha Nguyen and Varun Sudunagunta</li>
+                                    <li>3rd - Mission Possible - Neil Patil and Blake Karwoski</li>
+                                    <li>1st - Anatomy &amp; Physiology - Lily Xu and Dhruv Puri</li>
+                                    <li>3rd - Forensics - Zennie Wey and Akshara Anand</li>
+                                    <li>2nd - Fossils - Elena Arnold and Varun Sudunagunta</li>
+                                    <li>1st - Geologic Mapping- Geologic Mapping and Dhruv Puri</li>
+                                    <li>5th - It's About Time - Blake Karwoski and Evan Tey</li>
+                                </ul>
+                                <p>Congratulations everyone on an amazing job! Let's see if we can do it again - our next tournament, Wright State, is in a few weeks. </p>
+                            </section>
+                        </article>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-     <!-- Kingwood results -->
-        <div class="row">
-            <div class="blogpost-header">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <article class="post">
-                        <header class="post-header">
-                            <span class="post-meta">
+            <!-- Kingwood results -->
+            <div class="row">
+                <div class="blogpost-header">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <article class="post">
+                            <header class="post-header">
+                                <span class="post-meta">
                                 Posted by Neil Patil on
                                 <time datetime="2014-12-15">December 15, 2014</time>
-                            </span>
-                            <h2 class="post-title">Kingwood Results</h2>
-                        </header>
-                        <section class="post-excerpt">   
-                        <p>Congratulations everyone on a great third place finish overall at Kingwood!</p>
-			    <p>Team Axolotl placed 4th and Team Bee 5th.</p>
-                            <p>Below are 1st, 2nd, and 3rd finishes for the tournament.</p>
-                            <ul>
-                              <li>1st - Air Trajectory - Wilson Nguyen and Blake Karwoski</li>
-                              <li>1st - Anatomy &amp; Physiology - Lily Xu and Zoe Foley</li>
-                              <li>2nd - Anatomy &amp; Physiology - Isaree Pikatong and Sarah Lucas</li>
-                              <li>1st - Astronomy - Evan Tey and Sahil Vaidya</li>
-                              <li>3rd - Compound Machines - Nha Nguyen and Evan Tey</li>
-                              <li>3rd - Disease Detectives - Lily Xu and Nathan Le</li>
-                              <li>1st - Entomology - Rebekah Albach and Akshara Anand</li>
-                              <li>3rd - Experimental Design - Neil Patil, Logan Morales, Isaree Pikatong</li>
-                              <li>3rd - Geologic Mapping - Blake Karwoski and Cassidy Curra</li>
-                              <li>1st - It's About Time - Justin Kang and Blake Karwoski</li>
-                              <li>2nd - It's About Time - Evan Tey and Nha Nguyen</li>
-                              <li>1st - Mission Possible - Blake Karwoski and Connor Kordes</li>
-                              <li>2nd - Mission Possible - Neil Patil and Claire Morrison</li>
-                              <li>3rd - Protein Modeling - Lily Xu and Nathan Le</li>
-                              <li>2nd - Scrambler - Neil Patil and Nha Nguyen</li>
-                            </ul>
- 
-                        </section>
-                    </article>
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
+                                </span>
+                                <h2 class="post-title">Kingwood Results</h2>
+                            </header>
+                            <section class="post-excerpt">
+                                <p>Congratulations everyone on a great third place finish overall at Kingwood!</p>
+                                <p>Team Axolotl placed 4th and Team Bee 5th.</p>
+                                <p>Below are 1st, 2nd, and 3rd finishes for the tournament.</p>
+                                <ul>
+                                    <li>1st - Air Trajectory - Wilson Nguyen and Blake Karwoski</li>
+                                    <li>1st - Anatomy &amp; Physiology - Lily Xu and Zoe Foley</li>
+                                    <li>2nd - Anatomy &amp; Physiology - Isaree Pikatong and Sarah Lucas</li>
+                                    <li>1st - Astronomy - Evan Tey and Sahil Vaidya</li>
+                                    <li>3rd - Compound Machines - Nha Nguyen and Evan Tey</li>
+                                    <li>3rd - Disease Detectives - Lily Xu and Nathan Le</li>
+                                    <li>1st - Entomology - Rebekah Albach and Akshara Anand</li>
+                                    <li>3rd - Experimental Design - Neil Patil, Logan Morales, Isaree Pikatong</li>
+                                    <li>3rd - Geologic Mapping - Blake Karwoski and Cassidy Curra</li>
+                                    <li>1st - It's About Time - Justin Kang and Blake Karwoski</li>
+                                    <li>2nd - It's About Time - Evan Tey and Nha Nguyen</li>
+                                    <li>1st - Mission Possible - Blake Karwoski and Connor Kordes</li>
+                                    <li>2nd - Mission Possible - Neil Patil and Claire Morrison</li>
+                                    <li>3rd - Protein Modeling - Lily Xu and Nathan Le</li>
+                                    <li>2nd - Scrambler - Neil Patil and Nha Nguyen</li>
+                                </ul>
+                            </section>
+                        </article>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-
-     
-     <!-- Kingwood -->
-        <div class="row">
-            <div class="blogpost-header">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <article class="post">
-                        <header class="post-header">
-                            <span class="post-meta">
+            <!-- Kingwood -->
+            <div class="row">
+                <div class="blogpost-header">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <article class="post">
+                            <header class="post-header">
+                                <span class="post-meta">
                                 Posted by Neil Patil on
                                 <time datetime="2014-09-15">November 22, 2014</time>
-                            </span>
-                            <h2 class="post-title">Kingwood!</h2>
-                        </header>
-                        <section class="post-excerpt">
-                            <p>Our second tournament of the year, Kingwood, is December 13th!</p>
-			    <p>Schedules have been formed for teams Axolotl and Bee.</p>
-                        </section>
-                    </article>
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
+                                </span>
+                                <h2 class="post-title">Kingwood!</h2>
+                            </header>
+                            <section class="post-excerpt">
+                                <p>Our second tournament of the year, Kingwood, is December 13th!</p>
+                                <p>Schedules have been formed for teams Axolotl and Bee.</p>
+                            </section>
+                        </article>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-
-    <!-- Cyfalls Results -->
-        <div class="row">
-            <div class="blogpost-header">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <article class="post">
-                        <header class="post-header">
-                            <span class="post-meta">
+            <!-- Cyfalls Results -->
+            <div class="row">
+                <div class="blogpost-header">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <article class="post">
+                            <header class="post-header">
+                                <span class="post-meta">
                                 Posted by Neil Patil on
                                 <time datetime="2014-09-15">November 17, 2014</time>
-                            </span>
-                            <h2 class="post-title">Cyfalls Results!</h2>
-                        </header>
-                        <section class="post-excerpt">
-                            <p>Congratulations everyone on an amazing first place finish overall at Cyfalls!</p>
-			    <p>Team Avocado placed 1st, Team Cupcake 4th, and Team Bacon 7th.</p>
-                            <p>Congratulations to these individuals especially:</p>
-                            <ul>
-                              <li>1st - Air Trajectory - Ben Zern and Justin Kang</li>
-                              <li>1st - Astronomy - Zennie Wey and Kevin Chau</li>
-                              <li>1st - Entomology - Zennie Wey and Varun Sudunagunta</li>
-                              <li>1st - Fossils - Elena Arnold and Nathan Le</li>
-                              <li>1st - Geologic Mapping - Rebekah Albach and Dhruv Puri</li>
-                              <li>1st - Green Generation - Justin Zhang and Shivang Singh</li>
-                              <li>1st - Mission Possible - Ben Zern and Warren Zhou</li>
-                              <li>2nd - Anatomy &amp; Physiology - Anna Savelyeva and Nathan Le</li>
-                              <li>2nd - Astronomy - Isaac Cui and Paula Paysan</li>
-                              <li>2nd - Fossils - Varun Sudunagunta and Najah Hussain</li>
-                              <li>2nd - It's About Time - Ben Zern and Justin Kang</li>
-                              <li>2nd - Cell Biology - Sam Gunn and Anusha Vavilikolanu</li>
-                              <li>2nd - Chem Lab - Ricky Zhou and Kevin Black</li>
-                              <li>3rd - Dynamic Planet - Sam Gunn and Varun Sudunagunta</li>
-                              <li>3rd - Green Generation - Shubhanga Ballal and Srikari Punyamurtula</li>
-                              <li>3rd - Technical Problem Solving - Alec Shultz and Dhruv Puri</li>
-                            </ul>
-                        </section>
-                    </article>
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
+                                </span>
+                                <h2 class="post-title">Cyfalls Results!</h2>
+                            </header>
+                            <section class="post-excerpt">
+                                <p>Congratulations everyone on an amazing first place finish overall at Cyfalls!</p>
+                                <p>Team Avocado placed 1st, Team Cupcake 4th, and Team Bacon 7th.</p>
+                                <p>Congratulations to these individuals especially:</p>
+                                <ul>
+                                    <li>1st - Air Trajectory - Ben Zern and Justin Kang</li>
+                                    <li>1st - Astronomy - Zennie Wey and Kevin Chau</li>
+                                    <li>1st - Entomology - Zennie Wey and Varun Sudunagunta</li>
+                                    <li>1st - Fossils - Elena Arnold and Nathan Le</li>
+                                    <li>1st - Geologic Mapping - Rebekah Albach and Dhruv Puri</li>
+                                    <li>1st - Green Generation - Justin Zhang and Shivang Singh</li>
+                                    <li>1st - Mission Possible - Ben Zern and Warren Zhou</li>
+                                    <li>2nd - Anatomy &amp; Physiology - Anna Savelyeva and Nathan Le</li>
+                                    <li>2nd - Astronomy - Isaac Cui and Paula Paysan</li>
+                                    <li>2nd - Fossils - Varun Sudunagunta and Najah Hussain</li>
+                                    <li>2nd - It's About Time - Ben Zern and Justin Kang</li>
+                                    <li>2nd - Cell Biology - Sam Gunn and Anusha Vavilikolanu</li>
+                                    <li>2nd - Chem Lab - Ricky Zhou and Kevin Black</li>
+                                    <li>3rd - Dynamic Planet - Sam Gunn and Varun Sudunagunta</li>
+                                    <li>3rd - Green Generation - Shubhanga Ballal and Srikari Punyamurtula</li>
+                                    <li>3rd - Technical Problem Solving - Alec Shultz and Dhruv Puri</li>
+                                </ul>
+                            </section>
+                        </article>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-    <!-- Cyfalls -->
-        <div class="row">
-            <div class="blogpost-header">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <article class="post">
-                        <header class="post-header">
-                            <span class="post-meta">
+            <!-- Cyfalls -->
+            <div class="row">
+                <div class="blogpost-header">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <article class="post">
+                            <header class="post-header">
+                                <span class="post-meta">
                                 Posted by Neil Patil on
                                 <time datetime="2014-09-15">October 18, 2014</time>
-                            </span>
-                            <h2 class="post-title">Cyfalls!</h2>
-                        </header>
-                        <section class="post-excerpt">
-			    <p>Our first tournament of the year, Cyfalls, is November 15!</p>
-			    <p>Schedules have been formed for teams Avocado, Bacon, and Cupcake.</p>
-			    <p>Meet with your parters and get started studying and building!</p>
-                        </section>
-                    </article>
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
+                                </span>
+                                <h2 class="post-title">Cyfalls!</h2>
+                            </header>
+                            <section class="post-excerpt">
+                                <p>Our first tournament of the year, Cyfalls, is November 15!</p>
+                                <p>Schedules have been formed for teams Avocado, Bacon, and Cupcake.</p>
+                                <p>Meet with your parters and get started studying and building!</p>
+                            </section>
+                        </article>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-
-    <!-- PARTAYYYY -->
-        <div class="row">
-            <div class="blogpost-header">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <article class="post">
-                        <header class="post-header">
-                            <span class="post-meta">
+            <!-- PARTAYYYY -->
+            <div class="row">
+                <div class="blogpost-header">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <article class="post">
+                            <header class="post-header">
+                                <span class="post-meta">
                                 Posted by Neil Patil on
                                 <time datetime="2014-09-15">September 15, 2014</time>
-                            </span>
-                            <h2 class="post-title">Party!</h2>
-                        </header>
-                        <section class="post-excerpt">
-                            <p>We'll be having our kick off party September 20 at the Xu's house!</p>
-                            <p>Make sure you bring a dish for the potluck and folding tables if you have any.</p>
-                            <p>You should have received an Evite and email with more information. If you didn't, make sure you're part of our <a href="contact.html">mailing list</a>.</p>
-                        </section>
-                    </article>
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
+                                </span>
+                                <h2 class="post-title">Party!</h2>
+                            </header>
+                            <section class="post-excerpt">
+                                <p>We'll be having our kick off party September 20 at the Xu's house!</p>
+                                <p>Make sure you bring a dish for the potluck and folding tables if you have any.</p>
+                                <p>You should have received an Evite and email with more information. If you didn't, make sure you're part of our <a href="contact.html">mailing list</a>.</p>
+                            </section>
+                        </article>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Workshops -->
-        <div class="row">
-            <div class="blogpost-header">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <article class="post">
-                        <header class="post-header">
-                            <span class="post-meta">
+            <!-- Workshops -->
+            <div class="row">
+                <div class="blogpost-header">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <article class="post">
+                            <header class="post-header">
+                                <span class="post-meta">
                                 Posted by Neil Patil on
                                 <time datetime="2014-09-10">September 10, 2014</time>
-                            </span>
-                            <h2 class="post-title">Event Workshops</h2>
-                        </header>
-                        <section class="post-excerpt">
-                            <p>To get started on events, we'll be having event workshops where where we'll be going over each event and talking about how to get started and do well in the event.</p>
-                            <p>Events under the category of Life and Earth Sciences will be Thursday (9/11/14), and Engineering, Inquiry, Physics, and Chemistry will be Tuesday (9/16/14).</p>
-                        </section>
-                    </article>
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
+                                </span>
+                                <h2 class="post-title">Event Workshops</h2>
+                            </header>
+                            <section class="post-excerpt">
+                                <p>To get started on events, we'll be having event workshops where where we'll be going over each event and talking about how to get started and do well in the event.</p>
+                                <p>Events under the category of Life and Earth Sciences will be Thursday (9/11/14), and Engineering, Inquiry, Physics, and Chemistry will be Tuesday (9/16/14).</p>
+                            </section>
+                        </article>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <!-- First Practice -->
-        <div class="row">
-            <div class="blogpost-header">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <article class="post">
-                        <header class="post-header">
-                            <span class="post-meta">
+            <!-- First Practice -->
+            <div class="row">
+                <div class="blogpost-header">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <article class="post">
+                            <header class="post-header">
+                                <span class="post-meta">
                                 Posted by Neil Patil on
                                 <time datetime="2014-09-05">September 5, 2014</time>
-                            </span>
-                            <h2 class="post-title">First Practice</h2>
-                        </header>
-                        <section class="post-excerpt">
-                            <p>The first SciO practice of the year will be Tuesday, September 9 after school in Mr. Villavicencio's room (this is Mr. Seagren's old room, right next to the SciTech teachers).</p>
-                            <p>We'll go over some important club info and kick off the season!</p>
-                        </section>
-                    </article>
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
+                                </span>
+                                <h2 class="post-title">First Practice</h2>
+                            </header>
+                            <section class="post-excerpt">
+                                <p>The first SciO practice of the year will be Tuesday, September 9 after school in Mr. Villavicencio's room (this is Mr. Seagren's old room, right next to the SciTech teachers).</p>
+                                <p>We'll go over some important club info and kick off the season!</p>
+                            </section>
+                        </article>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Contact form -->
-        <div class="row">
-            <div class="blogpost-header">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <article class="post">
-                        <header class="post-header">
-                            <span class="post-meta">
+            <!-- Contact form -->
+            <div class="row">
+                <div class="blogpost-header">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <article class="post">
+                            <header class="post-header">
+                                <span class="post-meta">
                                 Posted by Neil Patil on
                                 <time datetime="2014-09-03">September 3, 2014</time>
-                            </span>
-                            <a href="contact.html"><h2 class="post-title">Contact Form</h2></a>
-                        </header>
-                        <section class="post-excerpt">
-                            <p>If you're planning to do SciO, please fill out the contact form <a href="contact.html">here.</a> You should do this even if you've participated in LASA SciO in the past.</p>
-                        </section>
-                    </article>
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
+                                </span>
+                                <a href="contact.html">
+                                    <h2 class="post-title">Contact Form</h2>
+                                </a>
+                            </header>
+                            <section class="post-excerpt">
+                                <p>If you're planning to do SciO, please fill out the contact form <a href="contact.html">here.</a> You should do this even if you've participated in LASA SciO in the past.</p>
+                            </section>
+                        </article>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <!-- ICE CREAM!!! -->
-        <div class="row">
-            <div class="blogpost-header">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <article class="post">
-                        <header class="post-header">
-                            <span class="post-meta">
+            <!-- ICE CREAM!!! -->
+            <div class="row">
+                <div class="blogpost-header">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <article class="post">
+                            <header class="post-header">
+                                <span class="post-meta">
                                 Posted by Neil Patil on
                                 <time datetime="2014-08-28">August 28, 2014</time>
-                            </span>
-                            <a href="posts/ice-cream.html"><h2 class="post-title">Free Ice Cream and Informational Meeting!</h2></a>
-                        </header>
-                        <section class="post-excerpt">
-                            <p>There'll be an informational meeting in Mr. Croston's Room (220) during lunch Thursday (9/5/14). There will also be free ice cream!</p>
-                        </section>
-                    </article>
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
+                                </span>
+                                <a href="posts/ice-cream.html">
+                                    <h2 class="post-title">Free Ice Cream and Informational Meeting!</h2>
+                                </a>
+                            </header>
+                            <section class="post-excerpt">
+                                <p>There'll be an informational meeting in Mr. Croston's Room (220) during lunch Thursday (9/5/14). There will also be free ice cream!</p>
+                            </section>
+                        </article>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <!-- New Website -->
-        <div class="row">
-            <div class="blogpost-header">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <article class="post">
-                        <header class="post-header">
-                            <span class="post-meta">
+            <!-- New Website -->
+            <div class="row">
+                <div class="blogpost-header">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <article class="post">
+                            <header class="post-header">
+                                <span class="post-meta">
                                 Posted by Neil Patil on
                                 <time datetime="2014-08-11">August 11, 2014</time>
-                            </span>
-                            <a href="posts/new-website.html"><h2 class="post-title">New Website!</h2></a>
-                        </header>
-                        <section class="post-excerpt">
-                            <p>We've created a new website for LASA SciO (this one).</p>
-                        </section>
-                    </article>
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
+                                </span>
+                                <a href="posts/new-website.html">
+                                    <h2 class="post-title">New Website!</h2>
+                                </a>
+                            </header>
+                            <section class="post-excerpt">
+                                <p>We've created a new website for LASA SciO (this one).</p>
+                            </section>
+                        </article>
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-
-       <footer>
+        <footer>
             <div class="row">
                 <div class="col-lg-2 col-lg-offset-3">
                     <p>LASA SciO 2016-2017<br>
-                    lasa.scioly@gmail.com<br><br>
-                    
-                    7309 Lazy Creek Dr.<br>
-                    Austin, TX 78724<br>
-                    T/W 4-6</p>
-
+                        lasa.scioly@gmail.com<br><br>
+                        7309 Lazy Creek Dr.<br>
+                        Austin, TX 78724<br>
+                        T/W 4-6
+                    </p>
                 </div>
-                
                 <div class="col-lg-2 col-lg-offset-2">
                     <p>Currently maintained by Akshara Anand. Created by Neil Patil and Evan Tey. Open source on <a href="https://github.com/lasa-scio/lasa-scio.github.io">Github.</a></p>
-                    
                 </div>
             </div>
         </footer>
-
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-53722522-1', 'auto');
-    ga('send', 'pageview');
-    </script>
-</body>
-
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function() {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+            
+            ga('create', 'UA-53722522-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </body>
 </html>
