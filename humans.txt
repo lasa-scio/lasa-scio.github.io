@@ -23,4 +23,3 @@ Former SciO Mentor: Greg Palmer
 /* SITE */
 Language: English
 Doctype: HTML5
-IDE: Sublime Text
