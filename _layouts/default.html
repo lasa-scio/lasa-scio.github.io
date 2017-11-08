@@ -6,14 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>LASA Science Olympiad</title>
+        <title>{{ page.title }}</title>
         <!-- Bootstrap Core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <!-- Custom CSS -->
-        <link href="css/style.css" rel="stylesheet">
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
         <link rel="author" href="humans.txt" />
         <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-        <link rel='shortcut icon' href="img/favicon.ico" type="image/x-icon"/ >
+        <link rel='shortcut icon' href="assets/img/favicon.ico" type="image/x-icon"/ >
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -21,11 +21,12 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
         <!-- STYLESHEET [main - #46288c] [background purple - #e9e3f7] [subtext purple - #714bcb] -->
+        <!-- Custom CSS -->
+        <link href="assets/css/style.css" rel="stylesheet">
         <script type="text/javascript">
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-53722522-1']);
             _gaq.push(['_trackPageview']);
-            
             (function() {
                 var ga = document.createElement('script');
                 ga.type = 'text/javascript';
@@ -49,29 +50,29 @@
                     <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="index.html">
-                    <img src="img/logo.jpg" height="50px" alt="">
+                    <img src="assets/img/logo.jpg" height="50px" alt="">
                     </a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li>
+                        <li {% if page.url == "/news.html" %} class="active" {% endif %}>
                             <a href="news.html">News</a>
                         </li>
-                        <li>
+                        <li {% if page.url == "/history.html" %} class="active" {% endif %}>
                             <a href="history.html">History</a>
                         </li>
-                        <li>
+                        <li {% if page.url == "/calendar.html" %} class="active" {% endif %}>
                             <a href="calendar.html">Calendar</a>
                         </li>
-                        <li>
+                        <li {% if page.url == "/contact.html" %} class="active" {% endif %}>
                             <a href="contact.html">Contact Form</a>
                         </li>
-                        <li>
-                            <a href="links.html">Links and Handouts</a>
+                        <li {% if page.url == "/links.html" %} class="active" {% endif %}>
+                            <a href="links.html">Links and Documents</a>
                         </li>
-                        <!--<li class="active">
-                            <a href="donate.html">Donate</a>
+                        <!--<li>
+                            <a target="_blank" href="https://austinisd.schoolcashonline.com/Fee/Details/670/63/False/True">Donate</a>
                             </li>-->
                     </ul>
                 </div>
@@ -79,10 +80,9 @@
             </div>
             <!-- /.container -->
         </nav>
-        <!-- Page Content -->
-        <div class="container">
-            <iframe src="https://austinisd.schoolcashonline.com/Fee/Details/670/63/False/True"></iframe>
-        </div>
+
+        {{ content }}
+
         <footer>
             <div class="row">
                 <div class="col-lg-2 col-lg-offset-3">
@@ -94,14 +94,10 @@
                     </p>
                 </div>
                 <div class="col-lg-2 col-lg-offset-2">
-                    <p>Currently maintained by Ben Zern. Created by Neil Patil and Evan Tey. Open source on <a href="https://github.com/lasa-scio/lasa-scio.github.io">Github.</a></p>
+                    <p>Currently maintained by Kevin Black. Created by Neil Patil, Evan Tey, and Kevin Black. Open source on <a href="https://github.com/lasa-scio/lasa-scio.github.io">Github.</a></p>
                 </div>
             </div>
         </footer>
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/bootstrap.min.js"></script>
         <script>
             (function(i, s, o, g, r, a, m) {
                 i['GoogleAnalyticsObject'] = r;
@@ -114,11 +110,8 @@
                 a.src = g;
                 m.parentNode.insertBefore(a, m)
             })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-            
             ga('create', 'UA-53722522-1', 'auto');
             ga('send', 'pageview');
-            
-            window.location = "https://austinisd.schoolcashonline.com/Fee/Details/670/63/False/True";
         </script>
     </body>
 </html>

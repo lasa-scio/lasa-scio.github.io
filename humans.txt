@@ -6,6 +6,9 @@ From: Austin, TX
 Developer: Evan Tey
 From: Austin, TX
 
+Developer: Kevin Black
+From: Austin, TX
+
 /* THANKS */
 
 Fellow Captain: Blake Karwoski

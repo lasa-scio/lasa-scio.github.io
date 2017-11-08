@@ -168,7 +168,7 @@ iframe {
     height: 800px;
 }
 
-.img-history {
+.post-excerpt>p>img {
     padding-top: 12px;
     padding-bottom: 12px;
     height: 400px;
