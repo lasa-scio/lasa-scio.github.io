@@ -21,4 +21,4 @@ The assets directory contains static assets such as images, fonts, Javascript, a
 4. Edit the file. The title and author(s) go at the top, between the `---`. The content goes below, and uses Markdown syntax.
 5. If you want to include an image, place the image in the assets/img directory. In the post content, link to the image using the syntax `![](assets/img/name_of_image.jpg)`. Make sure the image is on a line by itself with an empty line above and below.
 
-If you need help, email [kevin3.black@gmail.com](mailto:kevin3.black@gmail.com).
+If you have any questions about LASA Science Olympaid or would like to learn more about our team please email us at [lasa.scioly@gmail.com](mailto:lasa.scioly@gmail.com).
