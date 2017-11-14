@@ -2,27 +2,24 @@
 layout: default
 title: LASA SciO - News
 ---
-<!-- Blog posts -->
-<div class="container">
-    {% for post in site.posts %}
-        <div class="row">
-            <div class="blogpost-header">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <article class="post">
-                        <header class="post-header">
-                            <span class="post-meta">
-                                Posted by {{ post.author }} on 
-                            <time datetime="{{ post.date }}">{{ post.date | date: "%b %-d, %Y" }}</time>
-                            </span>
-                            <h2 class="post-title">{{ post.title | upcase }}</h2>
-                        </header>
-                        <section class="post-excerpt">
-                            {{ post.content }}
-                        </section>
-                    </article>
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                </div>
+{% for post in site.posts %}
+    <div class="row">
+        <div class="blogpost-header">
+            <div class="col-lg-8 col-lg-offset-2">
+                <article class="post">
+                    <header class="post-header">
+                        <span class="post-meta">
+                            Posted by {{ post.author }} on 
+                        <time datetime="{{ post.date }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+                        </span>
+                        <h2 class="post-title">{{ post.title | upcase }}</h2>
+                    </header>
+                    <section class="post-excerpt">
+                        {{ post.content }}
+                    </section>
+                </article>
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
             </div>
         </div>
-    {% endfor %}
+{% endfor %}

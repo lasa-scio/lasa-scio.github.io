@@ -1,0 +1,41 @@
+<nav class="navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+            <img src="assets/img/logo.jpg" height="50px" alt="">
+            </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li {% if page.url == "/news.html" %} class="active" {% endif %}>
+                    <a href="news.html">News</a>
+                </li>
+                <li {% if page.url == "/history.html" %} class="active" {% endif %}>
+                    <a href="history.html">History</a>
+                </li>
+                <li {% if page.url == "/calendar.html" %} class="active" {% endif %}>
+                    <a href="calendar.html">Calendar</a>
+                </li>
+                <li {% if page.url == "/contact.html" %} class="active" {% endif %}>
+                    <a href="contact.html">Contact Form</a>
+                </li>
+                <li {% if page.url == "/links.html" %} class="active" {% endif %}>
+                    <a href="links.html">Links and Documents</a>
+                </li>
+                <!--<li>
+                    <a target="_blank" href="https://austinisd.schoolcashonline.com/Fee/Details/670/63/False/True">Donate</a>
+                    </li>-->
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
