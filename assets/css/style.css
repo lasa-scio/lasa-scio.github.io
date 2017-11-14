@@ -13,21 +13,20 @@ html, body {
     font-family: 'Lato', sans-serif;
 }
 
+#flipclock {
+    display: inline-block;
+    width: auto;
+}
+
 .center {
     text-align: center;
-    margin-bottom: 48px;
 }
 
 .history-center {
     text-align: center;
 }
 
-.state-countdown {
-    display: inline-block;
-    width: auto;
-}
-
-h1, h2 {
+h1, h2, h3 {
     color:#46288c;
 }
 

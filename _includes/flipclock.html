@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="/assets/css/flipclock.css">
+<script src="/assets/js/flipclock.min.js"></script>
+
+<div id="flipclock"></div>
+<h3>until <span id="next-tournament"></span></h3>
+
+<script type="text/javascript">
+    var dates = [];
+    var names = [];
+    {% for tournament in site.data.tournaments.tournaments %}
+        dates.push(new Date({{ tournament.date | date: "%Y"}}, {{ tournament.date | date: "%m"}} - 1, {{ tournament.date | date: "%e" }}));
+        names.push("{{ tournament.name }}");
+    {% endfor %}
+
+    var now = new Date();
+    for (var i = 0; i < dates.length; i++) {
+        if (now < dates[i]) {
+            var clock = $("#flipclock").FlipClock((dates[i].getTime()/1000) - (now.getTime()/1000), {
+                clockFace: 'DailyCounter',
+                countdown: true
+            });
+            $("#next-tournament").html(names[i]);
+            break;
+        }
+    }
+</script>

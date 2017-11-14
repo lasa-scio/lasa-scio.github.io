@@ -1,0 +1,24 @@
+show_countdown: false
+
+tournaments:
+  - name: Cyfalls
+    date: 2017-11-04
+
+  - name: UT Invitational
+    date: 2017-11-11
+
+  - name: Seven Lakes
+    date: 2017-12-02
+
+  - name: MIT Invitational
+    date: 2018-01-20
+
+  - name: UPenn Invitational
+    date: 2018-02-17
+
+  - name: State
+    date: 2018-04-20
+
+  - name: Nationals
+    date: 2018-05-18
+
