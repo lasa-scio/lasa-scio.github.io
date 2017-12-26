@@ -3,7 +3,21 @@ layout: default
 title: LASA SciO - Gallery
 ---
 <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
-<script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+
+<script type="text/javascript">
+    var folderId = "{{ site.data.gallery.folder_id }}";
+    var apiKey = "{{ site.data.gallery.api_key }}";
+
+    var url = "https://www.googleapis.com/drive/v3/files?q=%27" + folderId + "%27+in+parents&key=" + apiKey;
+
+    $.getJSON(url).done(function(data) {
+        $.each(data.files, function(i, item) {
+            console.log("appending item");
+            $("#links").append('<a href="https://drive.google.com/uc?export=view&id=' + item.id + '" title="' + item.name + '" data-gallery> <img src="https://drive.google.com/uc?export=view&id=' + item.id + '" alt="' + item.name + '"></a>');
+        });
+        $.getScript("http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js");
+    });
+</script>
 
 <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
 <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
@@ -39,14 +53,6 @@ title: LASA SciO - Gallery
         </div>
     </div>
 </div>
+
 <div id="links">
-    <a href="assets/img/cyfallsteam.jpg" title="Cyfalls Team" data-gallery>
-    <img src="assets/img/thumbnails/cyfallsteam.jpg" alt="Cyfalls">
-    </a>
-    <a href="assets/img/iceskating.jpg" title="Ice Skating" data-gallery>
-    <img src="assets/img/thumbnails/iceskating.jpg" alt="Ice Skating">
-    </a>
-    <a href="assets/img/mit_team_2015.jpg" title="MIT Team" data-gallery>
-    <img src="assets/img/thumbnails/mit_team_2015.jpg" alt="MIT Team">
-    </a>
 </div>
