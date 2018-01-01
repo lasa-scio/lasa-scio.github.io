@@ -18,6 +18,25 @@ html, body {
     width: auto;
 }
 
+#gallery > a {
+    /*float: left;*/
+    height: 185px;
+    width: 185px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    background-position: center 25%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#loading-gif {
+    margin: auto;
+    display: block;
+    max-width: 100px;
+}
+
 .center {
     text-align: center;
 }

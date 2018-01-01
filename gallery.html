@@ -2,51 +2,164 @@
 layout: default
 title: LASA SciO - Gallery
 ---
-<link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
-<script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+<link rel="stylesheet" href="assets/css/photoswipe.css"> 
+<link rel="stylesheet" href="assets/css/default-skin/default-skin.css"> 
 
-<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
-<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
-    <!-- The container for the modal slides -->
-    <div class="slides"></div>
-    <!-- Controls for the borderless lightbox -->
-    <h3 class="title"></h3>
-    <a class="prev">‹</a>
-    <a class="next">›</a>
-    <a class="close">×</a>
-    <a class="play-pause"></a>
-    <ol class="indicator"></ol>
-    <!-- The modal dialog, which will be used to wrap the lightbox content -->
-    <div class="modal fade">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title"></h4>
-                </div>
-                <div class="modal-body next"></div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default pull-left prev">
-                    <i class="glyphicon glyphicon-chevron-left"></i>
-                    Previous
-                    </button>
-                    <button type="button" class="btn btn-primary next">
-                    Next
-                    <i class="glyphicon glyphicon-chevron-right"></i>
-                    </button>
+<script src="assets/js/photoswipe.min.js"></script> 
+<script src="assets/js/photoswipe-ui-default.min.js"></script> 
+
+<script type="text/javascript">
+    var folderId = "{{ site.data.gallery.folder_id }}";
+    var apiKey = "{{ site.data.gallery.api_key }}";
+    var firstPageUrl = "https://www.googleapis.com/drive/v2/files?maxResults=9999999&orderBy=createdDate%20desc&q=%27" + folderId + "%27+in+parents&key=" + apiKey;
+
+    var items = [];
+
+    // add to gallery's `items` list using Google Drive API v2
+    var addToGallery = function(url) {
+        // if there are no more pages to add, trigger scroll event to render first page of thumbnails
+        if (url.startsWith("undefined")) {
+            $(window).scroll();
+        } else {
+            // otherwise, retrieve JSON and register callback to add items when done
+            $.getJSON(url).done(function (data) {
+                $.each(data.items, function(i, item) {
+                    if (item.mimeType.startsWith("image")) {
+                        items.push({
+                            src: "https://drive.google.com/uc?id=" + item.id,
+                            msrc: item.thumbnailLink,
+                            w: item.imageMediaMetadata.width,
+                            h: item.imageMediaMetadata.height
+                        });
+                    }
+                });
+                // attempt to add next page to gallery at end of callback
+                addToGallery(data.nextLink + "&key=" + apiKey);
+            });
+        }
+    };
+
+    // load entire gallery
+    addToGallery(firstPageUrl);
+
+    // load next page of thumbnails when user scrolls down/zooms out far enough
+    var thumbnailIndex = 0;
+    var loadThumbnails = function() {
+        // check if loading icon is on screen
+        var rect = $("#loading-gif")[0].getBoundingClientRect();
+        var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+        if(!(rect.bottom < 0 || rect.top - viewHeight >= 0)) {
+            // block further events
+            $(window).off("scroll");
+            $(window).off("resize");
+            
+            // if there is another page, load it
+            if (thumbnailIndex < items.length) {
+                var end = Math.min(thumbnailIndex + 60, items.length);
+                $.each(items.slice(thumbnailIndex, end), function(i, item) {
+                    // create link tag with placeholder loading image as background
+                    var thumbnail = $("<a class='thumbnail' data-index=" + (i + thumbnailIndex) + 
+                        " style='background-image: url(/assets/img/placeholder.png)' href='" + item.msrc + "'></a>");
+                    $("#gallery").append(thumbnail);
+
+                    // begin loading actual thumbnail and set it as background when done
+                    $("<img/>").attr("src", item.msrc).on("load", function () {
+                        thumbnail.css("background-image", "url(" + $(this).attr("src") + ")");
+                        $(this).remove();
+                    });
+
+                    // bind open gallery event
+                    thumbnail.click(function (e) {
+                        e.preventDefault();
+                        new PhotoSwipe($(".pswp")[0], PhotoSwipeUI_Default, items,
+                            {index: parseInt($(this).attr("data-index")), history: false, preload: [1, 3]}).init();
+                    });
+                });
+                thumbnailIndex = end;
+                // re-bind scroll event
+                $(window).scroll(loadThumbnails);
+                $(window).resize(loadThumbnails);
+            } else {
+                $("#loading-gif").remove();
+            }
+        }
+    };
+
+    // bind scroll event
+    $(window).scroll(loadThumbnails);
+    $(window).resize(loadThumbnails);
+</script>
+
+
+<div id="gallery">
+</div>
+
+<img id="loading-gif" src="/assets/img/loading.gif"/>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap"> 
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader: active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
                 </div>
             </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
         </div>
+
     </div>
+
 </div>
-<div id="links">
-    <a href="assets/img/cyfallsteam.jpg" title="Cyfalls Team" data-gallery>
-    <img src="assets/img/thumbnails/cyfallsteam.jpg" alt="Cyfalls">
-    </a>
-    <a href="assets/img/iceskating.jpg" title="Ice Skating" data-gallery>
-    <img src="assets/img/thumbnails/iceskating.jpg" alt="Ice Skating">
-    </a>
-    <a href="assets/img/mit_team_2015.jpg" title="MIT Team" data-gallery>
-    <img src="assets/img/thumbnails/mit_team_2015.jpg" alt="MIT Team">
-    </a>
-</div>
+
