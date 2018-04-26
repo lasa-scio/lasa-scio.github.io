@@ -1,4 +1,4 @@
-show_countdown: true
+show_countdown: false
 
 tournaments:
   - name: Cyfalls
