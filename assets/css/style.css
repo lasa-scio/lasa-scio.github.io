@@ -5,8 +5,9 @@
  */
 
 body {
-    padding-top: 75px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+    padding-top: 60px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
     font-size:16px;
+    overflow: hidden;
 }
 
 html, body {
@@ -37,8 +38,52 @@ html, body {
     max-width: 100px;
 }
 
+#test {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+@font-face {
+  font-family: 'brannonball';
+  src: url('../fonts/BrannbollFS_PERSONAL.ttf');
+}
+
+.demo-card-event.mdl-card {
+  width: 100%;
+  height: 100%;
+  background: #3E4EB8;
+}
+.demo-card-event > .mdl-card__actions {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.demo-card-event > .mdl-card__title {
+  align-items: flex-start;
+}
+.demo-card-event > .mdl-card__title > h4 {
+  margin-top: 0;
+}
+.demo-card-event > .mdl-card__actions {
+  display: flex;
+  box-sizing:border-box;
+  align-items: center;
+}
+.demo-card-event > .mdl-card__actions > .material-icons {
+  padding-right: 10px;
+}
+.demo-card-event > .mdl-card__title,
+.demo-card-event > .mdl-card__actions,
+.demo-card-event > .mdl-card__actions > .mdl-button {
+  color: #fff;
+}
+
 .center {
     text-align: center;
+}
+
+.lasaActive {
+  font-weight: bold;
+  opacity: 1;
 }
 
 .history-center {
@@ -47,6 +92,7 @@ html, body {
 
 h1, h2, h3 {
     color:#46288c;
+    font-family: Lato, sans-serif;
 }
 
 /* Declare heights because of positioning of img element */
@@ -70,11 +116,13 @@ h1, h2, h3 {
 .title {
     font-weight:bold;
     margin-bottom: 24px;
-    margin-left: 12px;
+    margin-left: 0px;
+    font-family: Lato, sans-serif;
 }
 
 h2.title {
     font-size: 34px;
+    font-family: Lato, sans-serif;
 }
 
 .navbar-fixed-top .nav {
@@ -121,7 +169,7 @@ footer > div {
 
 @media(min-width:768px) {
     body {
-        padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+        padding-top: 60px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
     }
 
     .navbar-fixed-top .navbar-brand {
@@ -168,7 +216,7 @@ float: left;
     border-color:#46288c;
 }
 .navbar-inverse .navbar-nav > li > a {
-  color: #fff; 
+  color: #fff;
   font-size:16px;
 }
 .navbar-inverse .navbar-nav > li > a:hover,

@@ -1,47 +1,34 @@
-<nav class="navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">
-            <img src="assets/img/logo.jpg" height="50px" alt="">
-            </a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li {% if page.url == "/news.html" %} class="active" {% endif %}>
-                    <a href="news.html">News</a>
-                </li>
-                <li {% if page.url == "/history.html" %} class="active" {% endif %}>
-                    <a href="history.html">History</a>
-                </li>
-                <li {% if page.url == "/calendar.html" %} class="active" {% endif %}>
-                    <a href="calendar.html">Calendar</a>
-                </li>
-                <li {% if page.url == "/gallery.html" %} class="active" {% endif %}>
-                    <a href="gallery.html">Gallery</a>
-                </li>
-                <li {% if page.url == "/contact.html" %} class="active" {% endif %}>
-                    <a href="contact.html">Contact Form</a>
-                </li>
-                <li {% if page.url == "/links.html" %} class="active" {% endif %}>
-                    <a href="links.html">Links and Documents</a>
-                </li>
-                <li {% if page.url == "/donate.html" %} class="active" {% endif %}>
-                    <a href="donate.html">Donate!</a>
-                </li>
-                <!--<li>
-                    <a target="_blank" href="https://austinisd.schoolcashonline.com/Fee/Details/670/63/False/True">Donate</a>
-                    </li>-->
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header" id="test">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title" style="font-family: 'brannonball'; font-size: 25px;">Lasa SciO0</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" {% if page.url == "/index.html" %} class="lasaActive" {% endif %} href="index.html">Home</a>
+        <a class="mdl-navigation__link" {% if page.url == "/news.html" %} class="lasaActive" {% endif %} href="news.html">News</a>
+        <a class="mdl-navigation__link" {% if page.url == "/history.html" %} class="lasaActive" {% endif %} href="history.html">History</a>
+        <a class="mdl-navigation__link" {% if page.url == "/calendar.html" %} class="lasaActive" {% endif %} href="calendar.html">Calendar</a>
+        <a class="mdl-navigation__link" {% if page.url == "/gallery.html" %} class="lasaActive" {% endif %} href="gallery.html">Gallery</a>
+        <a class="mdl-navigation__link" {% if page.url == "/contact.html" %} class="lasaActive" {% endif %} href="contact.html">Contact Form</a>
+        <a class="mdl-navigation__link" {% if page.url == "/links.html" %} class="lasaActive" {% endif %} href="links.html">Links and Documents</a>
+        <a class="mdl-navigation__link" {% if page.url == "/donate.html" %} class="lasaActive" {% endif %} href="donate.html">Donate!</a>
+      </nav>
     </div>
-    <!-- /.container -->
-</nav>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="" style="font-family: 'brannonball'; font-size: 25px; margin: 25px; text-align: center">Lasa SciO0</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" {% if page.url == "/index.html" %} class="lasaActive" {% endif %} href="index.html">Home</a>
+      <a class="mdl-navigation__link" {% if page.url == "/news.html" %} class="lasaActive" {% endif %} href="news.html">News</a>
+      <a class="mdl-navigation__link" {% if page.url == "/history.html" %} class="lasaActive" {% endif %} href="history.html">History</a>
+      <a class="mdl-navigation__link" {% if page.url == "/calendar.html" %} class="lasaActive" {% endif %} href="calendar.html">Calendar</a>
+      <a class="mdl-navigation__link" {% if page.url == "/gallery.html" %} class="lasaActive" {% endif %} href="gallery.html">Gallery</a>
+      <a class="mdl-navigation__link" {% if page.url == "/contact.html" %} class="lasaActive" {% endif %} href="contact.html">Contact Form</a>
+      <a class="mdl-navigation__link" {% if page.url == "/links.html" %} class="lasaActive" {% endif %} href="links.html">Links and Documents</a>
+      <a class="mdl-navigation__link" {% if page.url == "/donate.html" %} class="lasaActive" {% endif %} href="donate.html">Donate!</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
