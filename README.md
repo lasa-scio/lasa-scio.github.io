@@ -1,5 +1,5 @@
 # LASA Science Olympiad
-This is the website for LASA SciO, built using Jekyll. It can be found at http://lasascio.com.
+This is the website for LASA SciO, built using Jekyll. It can be found at http://lasascioly.com
 
 ## Project structure
 The \_layouts directory contains the default (primary) layout, which includes the navbar and the footer. Any additional pages should use this layout.
