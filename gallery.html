@@ -4,45 +4,47 @@ title: LASA SciO - Gallery
 ---
 <link rel="stylesheet" href="assets/css/photoswipe.css">
 <link rel="stylesheet" href="assets/css/default-skin/default-skin.css">
+
 <script src="assets/js/photoswipe.min.js"></script>
 <script src="assets/js/photoswipe-ui-default.min.js"></script>
+
 <script>
-var folderId="{{ site.data.gallery.folder_id }}";
-var apiKey="{{ site.data.gallery.api_key }}";
-var firstPageUrl="https://www.googleapis.com/drive/v2/files?maxResults=9999999&orderBy=createdDate%20desc&q='"+folderId+"'+in+parents&key="+apiKey;
-var items=[];
-function addToGallery(url){
-  if(!url||url.startsWith("undefined")){
+var folderId = "{{ site.data.gallery.folder_id }}";
+var apiKey   = "{{ site.data.gallery.api_key }}";
+var firstPageUrl = "https://www.googleapis.com/drive/v2/files?maxResults=9999999&orderBy=createdDate%20desc&q='" + folderId + "'+in+parents&key=" + apiKey;
+var items = [];
+function addToGallery(url) {
+  if (!url || url.startsWith("undefined")) {
     renderThumbnails();
     return;
   }
-  $.getJSON(url).done(function(data){
-    $.each(data.items,function(i,item){
-      if(item.mimeType.indexOf("image")===0){
+  $.getJSON(url).done(function(data) {
+    $.each(data.items, function(i, item) {
+      if (item.mimeType.indexOf("image") === 0) {
         items.push({
-          src:  "https://drive.google.com/uc?export=view&id="+item.id,
+          src:  "https://drive.google.com/uc?export=download&id=" + item.id,
           msrc: item.thumbnailLink,
           w:    item.imageMediaMetadata.width,
           h:    item.imageMediaMetadata.height
         });
       }
     });
-    addToGallery(data.nextLink+"&key="+apiKey);
+    addToGallery(data.nextLink + "&key=" + apiKey);
   });
 }
-function renderThumbnails(){
-  $.each(items,function(idx,item){
-    var thumb=$("<a>")
+function renderThumbnails() {
+  $.each(items, function(idx, item) {
+    var thumb = $("<a>")
       .addClass("thumbnail")
-      .attr("data-index",idx)
-      .css("background-image","url("+item.msrc+")")
-      .attr("href",item.src);
+      .attr("data-index", idx)
+      .css("background-image", "url(" + item.msrc + ")")
+      .attr("href", item.src);
     $("#gallery").append(thumb);
-    thumb.on("click",function(e){
+    thumb.on("click", function(e) {
       e.preventDefault();
-      new PhotoSwipe($(".pswp")[0],PhotoSwipeUI_Default,items,{
-        index:idx,
-        history:false
+      new PhotoSwipe($(".pswp")[0], PhotoSwipeUI_Default, items, {
+        index: idx,
+        history: false
       }).init();
     });
   });
@@ -70,7 +72,7 @@ addToGallery(firstPageUrl);
         <button class="pswp__button pswp__button--close" title="Close"></button>
         <button class="pswp__button pswp__button--share" title="Share"></button>
         <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-        <button class="pswp__button pswp__button--zoom" title="Zoom in"></button>
+        <button class="pswp__button pswp__button--zoom" title="Zoom"></button>
         <div class="pswp__preloader">
           <div class="pswp__preloader__icn">
             <div class="pswp__preloader__cut">
