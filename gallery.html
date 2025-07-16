@@ -42,11 +42,25 @@ function renderThumbnails() {
     $("#gallery").append(thumb);
     thumb.on("click", function(e) {
       e.preventDefault();
+      console.log(idx, item.src);
       new PhotoSwipe($(".pswp")[0], PhotoSwipeUI_Default, items, {
         index: idx,
         history: false
       }).init();
     });
+  });
+  checkAllUrls();
+}
+function checkAllUrls() {
+  items.forEach(function(item, i) {
+    console.log(i, item.src);
+    var tester = new Image();
+    tester.onload  = function() { console.log("OK", item.src); };
+    tester.onerror = function() { console.error("FAIL", item.src); };
+    tester.src     = item.src;
+    fetch(item.src, { method: "HEAD" })
+      .then(function(r) { console.log("HEAD", r.status, item.src); })
+      .catch(function(err) { console.error("HEADERR", item.src, err); });
   });
 }
 addToGallery(firstPageUrl);
